@@ -1,0 +1,250 @@
+{
+    "forceLocation": true,
+    "transitions": [
+        {
+            "from": 307,
+            "expression": "true",
+            "order": 0,
+            "to": 613
+        },
+        {
+            "from": 592,
+            "expression": "true",
+            "order": 0,
+            "to": 1061
+        },
+        {
+            "from": 613,
+            "expression": "true",
+            "order": 0,
+            "to": 624
+        },
+        {
+            "from": 624,
+            "expression": "true",
+            "order": 0,
+            "to": 639
+        },
+        {
+            "from": 639,
+            "expression": "true",
+            "order": 0,
+            "to": 1043
+        },
+        {
+            "from": 652,
+            "expression": "true",
+            "order": 0,
+            "to": 307
+        },
+        {
+            "from": 1043,
+            "expression": "true",
+            "order": 0,
+            "to": 592
+        }
+    ],
+    "pages": [
+        {
+            "id": 592,
+            "questions": [
+                593
+            ]
+        },
+        {
+            "id": 1061,
+            "questions": [
+                1068
+            ]
+        },
+        {
+            "id": 1043,
+            "questions": [
+                151
+            ]
+        },
+        {
+            "id": 639,
+            "questions": [
+                1159
+            ]
+        },
+        {
+            "id": 624,
+            "questions": [
+                1134
+            ]
+        },
+        {
+            "id": 613,
+            "questions": [
+                1145
+            ]
+        },
+        {
+            "id": 307,
+            "questions": [
+                308
+            ]
+        },
+        {
+            "id": 652,
+            "questions": [
+                657
+            ]
+        }
+    ],
+    "questions": [
+        {
+            "name": "disease",
+            "title": "โรคที่สงสัยว่าป่วย",
+            "items": [
+                {
+                    "text": "ไข้หวัดใหญ่",
+                    "id": "ไข้หวัดใหญ่"
+                },
+                {
+                    "text": "ไข้เลือดออก",
+                    "id": "ไข้เลือดออก"
+                },
+                {
+                    "text": "อาหารเป็นพิษ",
+                    "id": "อาหารเป็นพิษ"
+                },
+                {
+                    "text": "โรคมือ เท้า ปาก",
+                    "id": "โรคมือ เท้า ปาก"
+                },
+                {
+                    "text": "ไม่ทราบ/ไม่แน่ใจ",
+                    "id": "ไม่ทราบ/ไม่แน่ใจ"
+                }
+            ],
+            "validations": [
+                {
+                    "message": "กรุณาระบุโรค",
+                    "type": "require"
+                }
+            ],
+            "type": "single",
+            "id": 593
+        },
+        {
+            "title": "วันที่เริ่มป่วย",
+            "type": "date",
+            "id": 1068,
+            "name": "sick_date"
+        },
+        {
+            "title": "อาการอื่นๆ",
+            "type": "text",
+            "id": 151,
+            "name": "symptom_other"
+        },
+        {
+            "freeTextId": "อื่นๆ",
+            "name": "symptom",
+            "title": "อาการไข้ ผื่น ตุ่ม",
+            "items": [
+                {
+                    "text": "มีไข้ร่วมกับผื่นนูนแดง",
+                    "id": "มีไข้ร่วมกับผื่นนูนแดง"
+                },
+                {
+                    "text": "มีไข้ร่วมกับจุดแดง",
+                    "id": "มีไข้ร่วมกับจุดแดง"
+                },
+                {
+                    "text": "มีใข้ร่วมกับตุ่ม",
+                    "id": "มีใข้ร่วมกับตุ่ม"
+                }
+            ],
+            "freeTextChoiceEnable": true,
+            "freeTextText": "อื่นๆ",
+            "freeTextName": "symptomOther",
+            "type": "multiple",
+            "id": 1159
+        },
+        {
+            "freeTextId": "อื่นๆ",
+            "name": "symptom",
+            "title": "อาการระบบทางเดินอาหาร",
+            "items": [
+                {
+                    "text": "ท้องเสีย",
+                    "id": "ท้องเสีย"
+                },
+                {
+                    "text": "คลื่นไส้/อาเจียน",
+                    "id": "คลื่นไส้/อาเจียน"
+                },
+                {
+                    "text": "ปวดท้อง",
+                    "id": "ปวดท้อง"
+                }
+            ],
+            "freeTextChoiceEnable": true,
+            "freeTextText": "อื่นๆ",
+            "freeTextName": "symptomOther",
+            "type": "multiple",
+            "id": 1145
+        },
+        {
+            "freeTextId": "อื่นๆ",
+            "name": "symptom",
+            "title": "อาการระบบทางเดินหายใจ",
+            "items": [
+                {
+                    "text": "มีไข้",
+                    "id": "มีไข้"
+                },
+                {
+                    "text": "ไอ",
+                    "id": "ไอ"
+                },
+                {
+                    "text": "เจ็บคอ",
+                    "id": "เจ็บคอ"
+                },
+                {
+                    "text": "มีเสมหะ",
+                    "id": "มีเสมหะ"
+                },
+                {
+                    "text": "หายใจเหนื่อยหอบ",
+                    "id": "หายใจเหนื่อยหอบ"
+                }
+            ],
+            "freeTextChoiceEnable": true,
+            "freeTextText": "อื่นๆ",
+            "freeTextName": "symptomOther",
+            "type": "multiple",
+            "id": 1134
+        },
+        {
+            "title": "ชื่อสถานที่ที่พบผู้ป่วย",
+            "validations": [
+                {
+                    "message": "กรุณาระบุสถานที่",
+                    "type": "require"
+                }
+            ],
+            "type": "text",
+            "id": 308,
+            "name": "address"
+        },
+        {
+            "title": "จำนวนผู้ป่วย",
+            "validations": [
+                {
+                    "message": "กรุณาระบุจำนวนผู้ป่วย",
+                    "type": "require"
+                }
+            ],
+            "type": "integer",
+            "id": 657,
+            "name": "sickCount"
+        }
+    ],
+    "startPageId": 652
+}
