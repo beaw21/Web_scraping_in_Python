@@ -20,6 +20,8 @@ driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
 # driver = webdriver.Chrome(service=service, options=options)
 driver.get("https://github.com/apache/hive")
 
+
+
 driver.find_element(By.ID, "pull-requests-tab").click()
 time.sleep(5)
 print("ok")
