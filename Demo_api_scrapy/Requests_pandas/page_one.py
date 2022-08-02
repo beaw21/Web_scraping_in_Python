@@ -1,28 +1,43 @@
-from sklearn.datasets import load_wine
+import json
+
 from datetime import timedelta
 import pandas as pd
 import numpy as np
 import requests
+import io
 
 pull_closed = requests.get('https://api.github.com/repos/apache/hive/pulls?state=closed')
+
 data_json_pull_closed = pull_closed.json()
 
 length = list(data_json_pull_closed)
 
+df = pd.DataFrame(length)
 
-def closed_pull():
-    for i in length:
-        print("Id", i['id'])
-        print("State", i['state'])
-        print("Created_at", i['created_at'])
-        print('Closed_at', i['closed_at'])
-        # x = list(dic[0]['user'].values())[1]
-        print('User_id', i['user']['id'])
-        print('User_type', i['user']['type'])
-        #
-        # print(i['id'])
-        # print(i['state'])
-        # print(i['created_at'])
-        # print(i['closed_at'])
-        # print(i['user']['id'])
-        # print(i['user']['type'])
+new_data = []
+
+new_df = pd.DataFrame(new_data)
+new_df['ID'] = df[{'id'}]
+new_df['url_pull'] = df[{'url'}]
+new_df['url_issues'] = df[{'issue_url'}]
+new_df['url_commits'] = df[{'commits_url'}]
+new_df['Stats'] = df['state']
+new_df['Created_at'] = df['created_at']
+new_df['Closed_at'] = df['closed_at'].values
+
+new_df['User_id'] = df['user'].apply(lambda x: x['id']).values
+# new_df['User_type'] = df['user']
+print("User id in list")
+list(new_df)
+
+# def loop():
+#     for i in length:
+# print("Id", i['id'])
+# print("url_pulls", i['url'])
+# print("url_issues", i['issue_url'])
+# print("url_commits", i['commits_url'])
+# print("State", i['state'])
+# print("Created_at", i['created_at'])
+# print('Closed_at', i['closed_at'])
+# print('User_id', i['user']['id'])
+# print('User_type', i['user']['type'])
