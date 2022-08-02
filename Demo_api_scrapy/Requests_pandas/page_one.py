@@ -17,18 +17,17 @@ df = pd.DataFrame(length)
 new_data = []
 
 new_df = pd.DataFrame(new_data)
-new_df['ID'] = df[{'id'}]
-new_df['url_pull'] = df[{'url'}]
-new_df['url_issues'] = df[{'issue_url'}]
-new_df['url_commits'] = df[{'commits_url'}]
-new_df['Stats'] = df['state']
-new_df['Created_at'] = df['created_at']
+new_df['ID'] = df['id'].values
+new_df['url_pull'] = df['url'].values
+new_df['url_issues'] = df['issue_url'].values
+new_df['url_commits'] = df['commits_url'].values
+new_df['Stats'] = df['state'].values
+new_df['Created_at'] = df['created_at'].values
 new_df['Closed_at'] = df['closed_at'].values
 
 new_df['User_id'] = df['user'].apply(lambda x: x['id']).values
 # new_df['User_type'] = df['user']
-print("User id in list")
-list(new_df)
+# print("User id in list" +new_df['User_id'])
 
 # def loop():
 #     for i in length:
