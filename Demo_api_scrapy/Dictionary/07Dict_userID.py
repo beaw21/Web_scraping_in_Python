@@ -18,10 +18,7 @@ new_data = []
 
 new_df = pd.DataFrame(new_data)
 new_df['ID'] = df['id'].values
-new_df['url_pull'] = df['url'].values
-new_df['url_issues'] = df['issue_url'].values
-new_df['url_commits'] = df['commits_url'].values
-new_df['Stats'] = df['state'].values
-new_df['Created_at'] = df['created_at'].values
-new_df['Closed_at'] = df['closed_at'].values
 new_df['User_id'] = df['user'].apply(lambda x: x['id']).values
+
+Dict = pd.DataFrame.from_dict(new_df)
+print(Dict)
