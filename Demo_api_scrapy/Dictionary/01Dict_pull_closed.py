@@ -32,15 +32,9 @@ myDict["pulls"] = new_df['url_pull']
 Dict = pd.DataFrame.from_dict(new_df)
 print(Dict)
 
+get_requests_url = requests.get(Dict['url_pull']).json()
+print(get_requests_url)
 
-class ErrbackSpider(scrapy.Spider):
-    name = "Pang pulls"
-    start_urls_pulls = Dict['url_pull']
+set_index = Dict.set_index("ID").to_dict()["url_pull"]
 
-    def start_requests(self):
-        for u in self.start_urls_pulls:
-            yield scrapy.Request(u, callback=self.parse_httpbin, errback=self.errback_httpbin, dont_filter=True)
-
-    def parse_httpbin(self, response):
-        self.logger.info('Got successful response from {}'.format(response.url))
-        print(response)
+Dict.apply(lambda x: x["url_pull"], 1)
