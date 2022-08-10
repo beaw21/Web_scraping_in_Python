@@ -21,12 +21,13 @@ Dict = pd.DataFrame.from_dict(new_df)
 get_url = Dict.apply(lambda x: x["url_pull"], 1)
 
 # get obj json in each URL
-for i in get_url:
-    requests.get(i).json()
-    print(requests.get(i).json())
-    if i == 29:
-        break;
+# for i in get_url:
+#     requests.get(i).json()
+#     print(requests.get(i).json())
+#     if i == 29:
+#         break;
 
+get_url.apply(lambda x: requests.get(x).json())
 # get_obj = requests.get(get_url[0]).json()
 
 
