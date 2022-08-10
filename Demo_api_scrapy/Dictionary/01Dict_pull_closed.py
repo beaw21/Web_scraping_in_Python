@@ -37,3 +37,6 @@ df_dict = pd.DataFrame({"id_pull": get_obj.apply(lambda x: x['id']),
                         "amount_changed_files": get_obj.apply(lambda x: x['changed_files']),
                         "number_sha": get_obj.apply(lambda x: x['base']['sha'])
                         })
+
+# Check Map ID pull
+list(map(lambda x, y: x == y, new_df['ID'], df_dict['id_pull']))
