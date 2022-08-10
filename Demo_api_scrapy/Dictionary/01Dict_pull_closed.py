@@ -7,11 +7,8 @@ data_json_pull_closed = pull_closed.json()
 df = pd.DataFrame(data_json_pull_closed)
 
 # mew data Frame for pull state closed
-new_data = []
-
-new_df = pd.DataFrame(new_data)
-new_df['ID'] = df['id'].values
-new_df['url_pull'] = df['url'].values
+new_df = pd.DataFrame({'ID': df['id'].values,
+                       'url_pull': df['url'].values})
 
 # Creates DataFrame object from dictionary by columns or by index allowing dtype specification
 Dict = pd.DataFrame.from_dict(new_df)
