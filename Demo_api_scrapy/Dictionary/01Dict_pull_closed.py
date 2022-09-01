@@ -10,7 +10,7 @@ df = pd.DataFrame(data_json_pull_closed)
 new_df = pd.DataFrame({'ID': df['id'].values,
                        'url_pull': df['url'].values})
 
-# Creates DataFrame object from dictionary by columns or by index allowing dtype specification
+# Creates DataFrame object from dictionary by columns or by index allowing type specification
 Dict = pd.DataFrame.from_dict(new_df)
 
 # create an empty pandas to dictionary
@@ -36,4 +36,6 @@ df_dict = pd.DataFrame({"id_pull": get_obj.apply(lambda x: x['id']),
                         })
 
 # Check Map ID pull
-list(map(lambda x, y: x == y, new_df['ID'], df_dict['id_pull']))
+list_map = list(map(lambda x, y: x == y, new_df['ID'], df_dict['id_pull']))
+
+# https://api.github.com/repos/apache/hive/pulls?state=closed&per_page=100&page=1&sparkline=false
