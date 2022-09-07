@@ -38,4 +38,4 @@ df_dict = pd.DataFrame({"id_pull": get_obj.apply(lambda x: x['id']),
 # Check Map ID pull
 list_map = list(map(lambda x, y: x == y, new_df['ID'], df_dict['id_pull']))
 
-# https://api.github.com/repos/apache/hive/pulls?state=closed&per_page=100&page=1&sparkline=false
+
