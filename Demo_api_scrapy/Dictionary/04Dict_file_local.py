@@ -12,6 +12,10 @@ import requests
 api_get = 'https://api.github.com/repos/apache/hive/pulls?state=closed'
 
 
+# pull_closed = requests.get('https://api.github.com/repos/apache/hive/pulls?state=closed')
+
+# api_get = pull_closed.json()
+
 # api_get_users = 'https://api.github.com/users'
 #
 #
@@ -46,10 +50,12 @@ def check_page_api(api, **page):
     return (x)
 
 
-result = check_page_api(api_get)
+result = check_page_api(api_get.format(json))
 
 json_odject = json.dumps(result)
-with open("pull_colsed.json", "w") as outfile:
-    outfile.write(json_odject)
 
-
+for num in range(1, 10):
+    with open("pull_closed" + str(num) + ".json", 'w') as f:
+        f.write(json_odject)
+        f.close()
+    print(f)
