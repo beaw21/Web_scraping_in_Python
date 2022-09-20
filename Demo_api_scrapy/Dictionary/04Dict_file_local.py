@@ -2,6 +2,7 @@ import json
 
 import pandas as pd
 import requests
+import ast
 
 # get_file_pull = pd.read_json('datapull.json')
 #
@@ -50,12 +51,11 @@ def check_page_api(api, **page):
     return (x)
 
 
-result = check_page_api(api_get.format(json))
-
-json_odject = json.dumps(result)
+result = check_page_api(api_get)
+df = pd.DataFrame(result)
 
 for num in range(1, 10):
     with open("pull_closed" + str(num) + ".json", 'w') as f:
-        f.write(json_odject)
+        f.write(df.to_json(orient='values'))
         f.close()
     print(f)
