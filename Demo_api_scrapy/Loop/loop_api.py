@@ -23,10 +23,5 @@ def cell_api(api, fromPage=1, toPage=5, **page):
 
 
 data_list_api = cell_api(api_get, fromPage=1, toPage=100)
-df = pd.DataFrame(data_list_api)
-
-for num in range(5, 7):
-    with open("pull_closed" + str(num) + ".json", 'w') as f:
-        f.write(df.to_json(orient='values'))
-        f.close()
-    print(f)
+df = pd.json_normalize(data_list_api)
+df.to_csv('a.csv')
