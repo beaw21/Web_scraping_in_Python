@@ -17,7 +17,6 @@ def cell_api(api, fromPage=1, toPage=5, **page):
         cell = requests.get(api + str(i))
         data += cell.json()
         print('loading page' + str(i))
-
     if len(data) > 10:
         return (data)
 
