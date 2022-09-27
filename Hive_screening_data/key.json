@@ -1,0 +1,27 @@
+{
+    "isLoggedIn": true,
+    "login": "admin",
+    "name": "Administrator",
+    "local": true,
+    "externalIdentity": "admin",
+    "externalProvider": "sonarqube",
+    "scmAccounts": [],
+    "groups": [
+        "sonar-administrators",
+        "sonar-users"
+    ],
+    "permissions": {
+        "global": [
+            "admin",
+            "gateadmin",
+            "profileadmin",
+            "provisioning",
+            "scan"
+        ]
+    },
+    "showOnboardingTutorial": false,
+    "homepage": {
+        "type": "PROJECTS"
+    },
+    "settings": []
+}
