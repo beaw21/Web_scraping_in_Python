@@ -1,0 +1,5159 @@
+{
+    "total": 43656,
+    "p": 1,
+    "ps": 100,
+    "paging": {
+        "pageIndex": 1,
+        "pageSize": 100,
+        "total": 43656
+    },
+    "effortTotal": 398858,
+    "debtTotal": 398858,
+    "issues": [
+        {
+            "key": "AYN47Mc_WrBK7jBo_-Mr",
+            "rule": "java:S1874",
+            "severity": "MINOR",
+            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/AccumuloConnectionParameters.java",
+            "project": "HIVE",
+            "line": 116,
+            "hash": "dda114b44701e5a504bd59fb95f289b2",
+            "textRange": {
+                "startLine": 116,
+                "endLine": 116,
+                "startOffset": 17,
+                "endOffset": 29
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this use of \"MockInstance\"; it is deprecated.",
+            "effort": "15min",
+            "debt": "15min",
+            "author": "khorgath@apache.org",
+            "tags": [
+                "cert",
+                "cwe",
+                "obsolete"
+            ],
+            "transitions": [
+                "confirm",
+                "resolve",
+                "falsepositive",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2014-08-19T22:41:10+0000",
+            "updateDate": "2022-09-26T08:05:00+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN"
+        },
+        {
+            "key": "AYN47Mc_WrBK7jBo_-Ms",
+            "rule": "java:S1659",
+            "severity": "MINOR",
+            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/AccumuloConnectionParameters.java",
+            "project": "HIVE",
+            "line": 162,
+            "hash": "ff1baa526f0af792987e5bde962d5912",
+            "textRange": {
+                "startLine": 162,
+                "endLine": 162,
+                "startOffset": 47,
+                "endOffset": 55
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Declare \"username\" on a separate line.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "khorgath@gmail.com",
+            "tags": [
+                "cert",
+                "convention"
+            ],
+            "transitions": [
+                "confirm",
+                "resolve",
+                "falsepositive",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2015-06-09T19:38:06+0000",
+            "updateDate": "2022-09-26T08:05:00+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN"
+        },
+        {
+            "key": "AYN47Mc_WrBK7jBo_-Mt",
+            "rule": "java:S1874",
+            "severity": "MINOR",
+            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/AccumuloConnectionParameters.java",
+            "project": "HIVE",
+            "line": 192,
+            "hash": "fa84d8cff56b51c9b801141ca42b92af",
+            "textRange": {
+                "startLine": 192,
+                "endLine": 192,
+                "startOffset": 17,
+                "endOffset": 30
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this use of \"KerberosToken\"; it is deprecated.",
+            "effort": "15min",
+            "debt": "15min",
+            "author": "khorgath@gmail.com",
+            "tags": [
+                "cert",
+                "cwe",
+                "obsolete"
+            ],
+            "transitions": [
+                "confirm",
+                "resolve",
+                "falsepositive",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2017-07-17T03:18:09+0000",
+            "updateDate": "2022-09-26T08:05:00+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN"
+        },
+        {
+            "key": "AYN47MdWWrBK7jBo_-Nq",
+            "rule": "java:S2293",
+            "severity": "MINOR",
+            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/AccumuloDefaultIndexScanner.java",
+            "project": "HIVE",
+            "line": 109,
+            "hash": "59157326db8b0ba54b6cc2a8fe8dd096",
+            "textRange": {
+                "startLine": 109,
+                "endLine": 109,
+                "startOffset": 38,
+                "endOffset": 45
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Replace the type specification in this constructor call with the diamond operator (\"<>\").",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "sershe@apache.org",
+            "tags": [
+                "clumsy"
+            ],
+            "transitions": [
+                "confirm",
+                "resolve",
+                "falsepositive",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2017-04-20T18:46:36+0000",
+            "updateDate": "2022-09-26T08:05:00+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN"
+        },
+        {
+            "key": "AYN47MdWWrBK7jBo_-Nm",
+            "rule": "java:S2629",
+            "severity": "MAJOR",
+            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/AccumuloDefaultIndexScanner.java",
+            "project": "HIVE",
+            "line": 116,
+            "hash": "ea5d925dff92f34b2c65cccfb57a5355",
+            "textRange": {
+                "startLine": 116,
+                "endLine": 116,
+                "startOffset": 18,
+                "endOffset": 94
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Use the built-in formatting to construct this argument.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "sershe@apache.org",
+            "tags": [
+                "performance"
+            ],
+            "transitions": [
+                "confirm",
+                "resolve",
+                "falsepositive",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2017-04-20T18:46:36+0000",
+            "updateDate": "2022-09-26T08:05:00+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN"
+        },
+        {
+            "key": "AYN47MdWWrBK7jBo_-Nr",
+            "rule": "java:S3457",
+            "severity": "MAJOR",
+            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/AccumuloDefaultIndexScanner.java",
+            "project": "HIVE",
+            "line": 116,
+            "hash": "ea5d925dff92f34b2c65cccfb57a5355",
+            "textRange": {
+                "startLine": 116,
+                "endLine": 116,
+                "startOffset": 8,
+                "endOffset": 95
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Format specifiers should be used instead of string concatenation.",
+            "effort": "10min",
+            "debt": "10min",
+            "author": "sershe@apache.org",
+            "tags": [
+                "cert",
+                "confusing"
+            ],
+            "transitions": [
+                "confirm",
+                "resolve",
+                "falsepositive",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2017-04-20T18:46:36+0000",
+            "updateDate": "2022-09-26T08:05:00+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN"
+        },
+        {
+            "key": "AYN47MdWWrBK7jBo_-Nn",
+            "rule": "java:S2629",
+            "severity": "MAJOR",
+            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/AccumuloDefaultIndexScanner.java",
+            "project": "HIVE",
+            "line": 121,
+            "hash": "aec77515977a0551752686ee8c6175a6",
+            "textRange": {
+                "startLine": 121,
+                "endLine": 121,
+                "startOffset": 18,
+                "endOffset": 53
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Invoke method(s) only conditionally. Use the built-in formatting to construct this argument.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "sershe@apache.org",
+            "tags": [
+                "performance"
+            ],
+            "transitions": [
+                "confirm",
+                "resolve",
+                "falsepositive",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2017-04-20T18:46:36+0000",
+            "updateDate": "2022-09-26T08:05:00+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN"
+        },
+        {
+            "key": "AYN47MdWWrBK7jBo_-Ns",
+            "rule": "java:S3457",
+            "severity": "MAJOR",
+            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/AccumuloDefaultIndexScanner.java",
+            "project": "HIVE",
+            "line": 121,
+            "hash": "aec77515977a0551752686ee8c6175a6",
+            "textRange": {
+                "startLine": 121,
+                "endLine": 121,
+                "startOffset": 8,
+                "endOffset": 54
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Format specifiers should be used instead of string concatenation.",
+            "effort": "10min",
+            "debt": "10min",
+            "author": "sershe@apache.org",
+            "tags": [
+                "cert",
+                "confusing"
+            ],
+            "transitions": [
+                "confirm",
+                "resolve",
+                "falsepositive",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2017-04-20T18:46:36+0000",
+            "updateDate": "2022-09-26T08:05:00+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN"
+        },
+        {
+            "key": "AYN47MdWWrBK7jBo_-Nt",
+            "rule": "java:S1168",
+            "severity": "MAJOR",
+            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/AccumuloDefaultIndexScanner.java",
+            "project": "HIVE",
+            "line": 130,
+            "hash": "540c13e9e156b687226421b24f2df178",
+            "textRange": {
+                "startLine": 130,
+                "endLine": 130,
+                "startOffset": 19,
+                "endOffset": 23
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Return an empty collection instead of null.",
+            "effort": "30min",
+            "debt": "30min",
+            "author": "sershe@apache.org",
+            "tags": [
+                "cert"
+            ],
+            "transitions": [
+                "confirm",
+                "resolve",
+                "falsepositive",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2017-04-20T18:46:36+0000",
+            "updateDate": "2022-09-26T08:05:00+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN"
+        },
+        {
+            "key": "AYN47MdWWrBK7jBo_-No",
+            "rule": "java:S2629",
+            "severity": "MAJOR",
+            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/AccumuloDefaultIndexScanner.java",
+            "project": "HIVE",
+            "line": 138,
+            "hash": "ff1d03703fae5992d36faa53a619740a",
+            "textRange": {
+                "startLine": 138,
+                "endLine": 138,
+                "startOffset": 20,
+                "endOffset": 63
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Invoke method(s) only conditionally. Use the built-in formatting to construct this argument.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "sershe@apache.org",
+            "tags": [
+                "performance"
+            ],
+            "transitions": [
+                "confirm",
+                "resolve",
+                "falsepositive",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2017-04-20T18:46:36+0000",
+            "updateDate": "2022-09-26T08:05:00+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN"
+        },
+        {
+            "key": "AYN47MdWWrBK7jBo_-Nu",
+            "rule": "java:S3457",
+            "severity": "MAJOR",
+            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/AccumuloDefaultIndexScanner.java",
+            "project": "HIVE",
+            "line": 138,
+            "hash": "ff1d03703fae5992d36faa53a619740a",
+            "textRange": {
+                "startLine": 138,
+                "endLine": 138,
+                "startOffset": 10,
+                "endOffset": 64
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Format specifiers should be used instead of string concatenation.",
+            "effort": "10min",
+            "debt": "10min",
+            "author": "sershe@apache.org",
+            "tags": [
+                "cert",
+                "confusing"
+            ],
+            "transitions": [
+                "confirm",
+                "resolve",
+                "falsepositive",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2017-04-20T18:46:36+0000",
+            "updateDate": "2022-09-26T08:05:00+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN"
+        },
+        {
+            "key": "AYN47MdWWrBK7jBo_-Np",
+            "rule": "java:S2629",
+            "severity": "MAJOR",
+            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/AccumuloDefaultIndexScanner.java",
+            "project": "HIVE",
+            "line": 152,
+            "hash": "feef41bcb1dc1927bb5a3b5f7f0f395c",
+            "textRange": {
+                "startLine": 152,
+                "endLine": 152,
+                "startOffset": 14,
+                "endOffset": 59
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Use the built-in formatting to construct this argument.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "sershe@apache.org",
+            "tags": [
+                "performance"
+            ],
+            "transitions": [
+                "confirm",
+                "resolve",
+                "falsepositive",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2017-04-20T18:46:36+0000",
+            "updateDate": "2022-09-26T08:05:00+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN"
+        },
+        {
+            "key": "AYN47MdWWrBK7jBo_-Nv",
+            "rule": "java:S3457",
+            "severity": "MAJOR",
+            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/AccumuloDefaultIndexScanner.java",
+            "project": "HIVE",
+            "line": 152,
+            "hash": "feef41bcb1dc1927bb5a3b5f7f0f395c",
+            "textRange": {
+                "startLine": 152,
+                "endLine": 152,
+                "startOffset": 4,
+                "endOffset": 60
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Format specifiers should be used instead of string concatenation.",
+            "effort": "10min",
+            "debt": "10min",
+            "author": "sershe@apache.org",
+            "tags": [
+                "cert",
+                "confusing"
+            ],
+            "transitions": [
+                "confirm",
+                "resolve",
+                "falsepositive",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2017-04-20T18:46:36+0000",
+            "updateDate": "2022-09-26T08:05:00+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN"
+        },
+        {
+            "key": "AYN47MdWWrBK7jBo_-Nw",
+            "rule": "java:S1168",
+            "severity": "MAJOR",
+            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/AccumuloDefaultIndexScanner.java",
+            "project": "HIVE",
+            "line": 153,
+            "hash": "540c13e9e156b687226421b24f2df178",
+            "textRange": {
+                "startLine": 153,
+                "endLine": 153,
+                "startOffset": 11,
+                "endOffset": 15
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Return an empty collection instead of null.",
+            "effort": "30min",
+            "debt": "30min",
+            "author": "sershe@apache.org",
+            "tags": [
+                "cert"
+            ],
+            "transitions": [
+                "confirm",
+                "resolve",
+                "falsepositive",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2017-04-20T18:46:36+0000",
+            "updateDate": "2022-09-26T08:05:00+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN"
+        },
+        {
+            "key": "AYN47MdWWrBK7jBo_-Nx",
+            "rule": "java:S2293",
+            "severity": "MINOR",
+            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/AccumuloDefaultIndexScanner.java",
+            "project": "HIVE",
+            "line": 172,
+            "hash": "c632126d6e0369c8f534ae1ada444787",
+            "textRange": {
+                "startLine": 172,
+                "endLine": 172,
+                "startOffset": 45,
+                "endOffset": 61
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Replace the type specification in this constructor call with the diamond operator (\"<>\").",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "sershe@apache.org",
+            "tags": [
+                "clumsy"
+            ],
+            "transitions": [
+                "confirm",
+                "resolve",
+                "falsepositive",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2017-04-20T18:46:36+0000",
+            "updateDate": "2022-09-26T08:05:00+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN"
+        },
+        {
+            "key": "AYN47MdSWrBK7jBo_-Nk",
+            "rule": "java:S1118",
+            "severity": "MAJOR",
+            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/AccumuloHiveConstants.java",
+            "project": "HIVE",
+            "line": 24,
+            "hash": "1fdf7a1fc21d267103ebf38c740dd31b",
+            "textRange": {
+                "startLine": 24,
+                "endLine": 24,
+                "startOffset": 13,
+                "endOffset": 34
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Add a private constructor to hide the implicit public one.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "khorgath@apache.org",
+            "tags": [
+                "design"
+            ],
+            "transitions": [
+                "confirm",
+                "resolve",
+                "falsepositive",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2014-08-19T22:41:10+0000",
+            "updateDate": "2022-09-26T08:05:00+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN"
+        },
+        {
+            "key": "AYN47MdSWrBK7jBo_-Ng",
+            "rule": "java:S1659",
+            "severity": "MINOR",
+            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/AccumuloHiveConstants.java",
+            "project": "HIVE",
+            "line": 26,
+            "hash": "0d084d5f621a615cc9265c4e6f43b931",
+            "textRange": {
+                "startLine": 26,
+                "endLine": 26,
+                "startOffset": 40,
+                "endOffset": 45
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Declare \"COMMA\" on a separate line.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "khorgath@apache.org",
+            "tags": [
+                "cert",
+                "convention"
+            ],
+            "transitions": [
+                "confirm",
+                "resolve",
+                "falsepositive",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2014-08-19T22:41:10+0000",
+            "updateDate": "2022-09-26T08:05:00+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN"
+        },
+        {
+            "key": "AYN47MdSWrBK7jBo_-Nh",
+            "rule": "java:S1659",
+            "severity": "MINOR",
+            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/AccumuloHiveConstants.java",
+            "project": "HIVE",
+            "line": 26,
+            "hash": "0d084d5f621a615cc9265c4e6f43b931",
+            "textRange": {
+                "startLine": 26,
+                "endLine": 26,
+                "startOffset": 53,
+                "endOffset": 59
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Declare \"ESCAPE\" on a separate line.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "khorgath@apache.org",
+            "tags": [
+                "cert",
+                "convention"
+            ],
+            "transitions": [
+                "confirm",
+                "resolve",
+                "falsepositive",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2014-08-19T22:41:10+0000",
+            "updateDate": "2022-09-26T08:05:00+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN"
+        },
+        {
+            "key": "AYN47MdSWrBK7jBo_-Ni",
+            "rule": "java:S1659",
+            "severity": "MINOR",
+            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/AccumuloHiveConstants.java",
+            "project": "HIVE",
+            "line": 26,
+            "hash": "0d084d5f621a615cc9265c4e6f43b931",
+            "textRange": {
+                "startLine": 26,
+                "endLine": 26,
+                "startOffset": 68,
+                "endOffset": 73
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Declare \"POUND\" on a separate line.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "khorgath@apache.org",
+            "tags": [
+                "cert",
+                "convention"
+            ],
+            "transitions": [
+                "confirm",
+                "resolve",
+                "falsepositive",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2014-08-19T22:41:10+0000",
+            "updateDate": "2022-09-26T08:05:00+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN"
+        },
+        {
+            "key": "AYN47MdSWrBK7jBo_-Nj",
+            "rule": "java:S1659",
+            "severity": "MINOR",
+            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/AccumuloHiveConstants.java",
+            "project": "HIVE",
+            "line": 26,
+            "hash": "0d084d5f621a615cc9265c4e6f43b931",
+            "textRange": {
+                "startLine": 26,
+                "endLine": 26,
+                "startOffset": 81,
+                "endOffset": 89
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Declare \"ASTERISK\" on a separate line.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "khorgath@apache.org",
+            "tags": [
+                "cert",
+                "convention"
+            ],
+            "transitions": [
+                "confirm",
+                "resolve",
+                "falsepositive",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2014-08-19T22:41:10+0000",
+            "updateDate": "2022-09-26T08:05:00+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN"
+        },
+        {
+            "key": "AYN47MdSWrBK7jBo_-Nl",
+            "rule": "java:S4719",
+            "severity": "MINOR",
+            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/AccumuloHiveConstants.java",
+            "project": "HIVE",
+            "line": 41,
+            "hash": "31164d91dd586a365881f2a00f655e8d",
+            "textRange": {
+                "startLine": 41,
+                "endLine": 41,
+                "startOffset": 38,
+                "endOffset": 62
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Replace Charset.forName() call with StandardCharsets.UTF_8",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "khorgath@apache.org",
+            "tags": [
+                "clumsy",
+                "java7"
+            ],
+            "transitions": [
+                "confirm",
+                "resolve",
+                "falsepositive",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2014-08-19T22:41:10+0000",
+            "updateDate": "2022-09-26T08:05:00+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN"
+        },
+        {
+            "key": "AYN47MarWrBK7jBo_-Js",
+            "rule": "java:S2293",
+            "severity": "MINOR",
+            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/AccumuloHiveRow.java",
+            "project": "HIVE",
+            "line": 41,
+            "hash": "204d80d71c0b7248fe203bbfaae4962c",
+            "textRange": {
+                "startLine": 41,
+                "endLine": 41,
+                "startOffset": 50,
+                "endOffset": 63
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Replace the type specification in this constructor call with the diamond operator (\"<>\").",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "khorgath@apache.org",
+            "tags": [
+                "clumsy"
+            ],
+            "transitions": [
+                "confirm",
+                "resolve",
+                "falsepositive",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2014-08-19T22:41:10+0000",
+            "updateDate": "2022-09-26T08:05:00+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN"
+        },
+        {
+            "key": "AYN47MarWrBK7jBo_-Jt",
+            "rule": "java:S1168",
+            "severity": "MAJOR",
+            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/AccumuloHiveRow.java",
+            "project": "HIVE",
+            "line": 78,
+            "hash": "540c13e9e156b687226421b24f2df178",
+            "textRange": {
+                "startLine": 78,
+                "endLine": 78,
+                "startOffset": 11,
+                "endOffset": 15
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Return an empty array instead of null.",
+            "effort": "30min",
+            "debt": "30min",
+            "author": "khorgath@apache.org",
+            "tags": [
+                "cert"
+            ],
+            "transitions": [
+                "confirm",
+                "resolve",
+                "falsepositive",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2014-08-19T22:41:10+0000",
+            "updateDate": "2022-09-26T08:05:00+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN"
+        },
+        {
+            "key": "AYN47MarWrBK7jBo_-Ju",
+            "rule": "java:S2293",
+            "severity": "MINOR",
+            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/AccumuloHiveRow.java",
+            "project": "HIVE",
+            "line": 87,
+            "hash": "e606b6617c22eb243654bcf87e41b7bf",
+            "textRange": {
+                "startLine": 87,
+                "endLine": 87,
+                "startOffset": 31,
+                "endOffset": 44
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Replace the type specification in this constructor call with the diamond operator (\"<>\").",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "khorgath@apache.org",
+            "tags": [
+                "clumsy"
+            ],
+            "transitions": [
+                "confirm",
+                "resolve",
+                "falsepositive",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2014-08-19T22:41:10+0000",
+            "updateDate": "2022-09-26T08:05:00+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN"
+        },
+        {
+            "key": "AYN47MarWrBK7jBo_-Jv",
+            "rule": "java:S1659",
+            "severity": "MINOR",
+            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/AccumuloHiveRow.java",
+            "project": "HIVE",
+            "line": 130,
+            "hash": "73ba680ccdec257e24f264ecbab02fac",
+            "textRange": {
+                "startLine": 130,
+                "endLine": 130,
+                "startOffset": 31,
+                "endOffset": 33
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Declare \"cq\" on a separate line.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "khorgath@apache.org",
+            "tags": [
+                "cert",
+                "convention"
+            ],
+            "transitions": [
+                "confirm",
+                "resolve",
+                "falsepositive",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2014-08-19T22:41:10+0000",
+            "updateDate": "2022-09-26T08:05:00+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN"
+        },
+        {
+            "key": "AYN47MarWrBK7jBo_-Jw",
+            "rule": "java:S3776",
+            "severity": "CRITICAL",
+            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/AccumuloHiveRow.java",
+            "project": "HIVE",
+            "line": 211,
+            "hash": "9e7b4afb7b5954039b90e4fcebae0043",
+            "textRange": {
+                "startLine": 211,
+                "endLine": 211,
+                "startOffset": 19,
+                "endOffset": 25
+            },
+            "flows": [
+                {
+                    "locations": [
+                        {
+                            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/AccumuloHiveRow.java",
+                            "textRange": {
+                                "startLine": 212,
+                                "endLine": 212,
+                                "startOffset": 6,
+                                "endOffset": 8
+                            },
+                            "msg": "+1"
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/AccumuloHiveRow.java",
+                            "textRange": {
+                                "startLine": 214,
+                                "endLine": 214,
+                                "startOffset": 8,
+                                "endOffset": 10
+                            },
+                            "msg": "+2 (incl 1 for nesting)"
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/AccumuloHiveRow.java",
+                            "textRange": {
+                                "startLine": 215,
+                                "endLine": 215,
+                                "startOffset": 10,
+                                "endOffset": 12
+                            },
+                            "msg": "+3 (incl 2 for nesting)"
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/AccumuloHiveRow.java",
+                            "textRange": {
+                                "startLine": 218,
+                                "endLine": 218,
+                                "startOffset": 15,
+                                "endOffset": 17
+                            },
+                            "msg": "+1"
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/AccumuloHiveRow.java",
+                            "textRange": {
+                                "startLine": 222,
+                                "endLine": 222,
+                                "startOffset": 8,
+                                "endOffset": 10
+                            },
+                            "msg": "+2 (incl 1 for nesting)"
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/AccumuloHiveRow.java",
+                            "textRange": {
+                                "startLine": 223,
+                                "endLine": 223,
+                                "startOffset": 10,
+                                "endOffset": 12
+                            },
+                            "msg": "+3 (incl 2 for nesting)"
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/AccumuloHiveRow.java",
+                            "textRange": {
+                                "startLine": 226,
+                                "endLine": 226,
+                                "startOffset": 15,
+                                "endOffset": 17
+                            },
+                            "msg": "+1"
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/AccumuloHiveRow.java",
+                            "textRange": {
+                                "startLine": 230,
+                                "endLine": 230,
+                                "startOffset": 8,
+                                "endOffset": 10
+                            },
+                            "msg": "+2 (incl 1 for nesting)"
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/AccumuloHiveRow.java",
+                            "textRange": {
+                                "startLine": 231,
+                                "endLine": 231,
+                                "startOffset": 10,
+                                "endOffset": 12
+                            },
+                            "msg": "+3 (incl 2 for nesting)"
+                        }
+                    ]
+                }
+            ],
+            "status": "OPEN",
+            "message": "Refactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.",
+            "effort": "8min",
+            "debt": "8min",
+            "author": "khorgath@apache.org",
+            "tags": [
+                "brain-overload"
+            ],
+            "transitions": [
+                "confirm",
+                "resolve",
+                "falsepositive",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2014-08-19T22:41:10+0000",
+            "updateDate": "2022-09-26T08:05:00+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN"
+        },
+        {
+            "key": "AYN47MarWrBK7jBo_-Jq",
+            "rule": "java:S1066",
+            "severity": "MAJOR",
+            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/AccumuloHiveRow.java",
+            "project": "HIVE",
+            "line": 231,
+            "hash": "5daedb3a802fbc300272664319c14ce0",
+            "textRange": {
+                "startLine": 231,
+                "endLine": 231,
+                "startOffset": 10,
+                "endOffset": 12
+            },
+            "flows": [
+                {
+                    "locations": [
+                        {
+                            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/AccumuloHiveRow.java",
+                            "textRange": {
+                                "startLine": 230,
+                                "endLine": 230,
+                                "startOffset": 8,
+                                "endOffset": 10
+                            }
+                        }
+                    ]
+                }
+            ],
+            "status": "OPEN",
+            "message": "Merge this if statement with the enclosing one.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "khorgath@apache.org",
+            "tags": [
+                "clumsy"
+            ],
+            "transitions": [
+                "confirm",
+                "resolve",
+                "falsepositive",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2014-08-19T22:41:10+0000",
+            "updateDate": "2022-09-26T08:05:00+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN"
+        },
+        {
+            "key": "AYN47MdEWrBK7jBo_-Mw",
+            "rule": "java:S1068",
+            "severity": "MAJOR",
+            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/AccumuloIndexLexicoder.java",
+            "project": "HIVE",
+            "line": 38,
+            "hash": "6b0a4c342ac114aed7faffd044d6eff6",
+            "textRange": {
+                "startLine": 38,
+                "endLine": 38,
+                "startOffset": 37,
+                "endOffset": 51
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this unused \"LONG_LEXICODER\" private field.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "sershe@apache.org",
+            "tags": [
+                "unused"
+            ],
+            "transitions": [
+                "confirm",
+                "resolve",
+                "falsepositive",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2017-04-20T18:46:36+0000",
+            "updateDate": "2022-09-26T08:05:00+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN"
+        },
+        {
+            "key": "AYN47MdPWrBK7jBo_-NO",
+            "rule": "java:S1130",
+            "severity": "MINOR",
+            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/AccumuloStorageHandler.java",
+            "project": "HIVE",
+            "line": 94,
+            "hash": "f2836e98a0d015ec4d137829938a52e6",
+            "textRange": {
+                "startLine": 94,
+                "endLine": 94,
+                "startOffset": 52,
+                "endOffset": 65
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove the declaration of thrown exception 'org.apache.hadoop.hive.metastore.api.MetaException', as it cannot be thrown from method's body.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "khorgath@apache.org",
+            "tags": [
+                "clumsy",
+                "error-handling",
+                "redundant",
+                "unused"
+            ],
+            "transitions": [
+                "confirm",
+                "resolve",
+                "falsepositive",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2014-08-19T22:41:10+0000",
+            "updateDate": "2022-09-26T08:05:00+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN"
+        },
+        {
+            "key": "AYN47MdPWrBK7jBo_-NP",
+            "rule": "java:S3252",
+            "severity": "CRITICAL",
+            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/AccumuloStorageHandler.java",
+            "project": "HIVE",
+            "line": 96,
+            "hash": "2ff519173c3ad3d8dd4284e8f51ee993",
+            "textRange": {
+                "startLine": 96,
+                "endLine": 96,
+                "startOffset": 73,
+                "endOffset": 83
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Use static access with \"org.apache.hadoop.hive.accumulo.AccumuloConnectionParameters\" for \"TABLE_NAME\".",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "khorgath@apache.org",
+            "tags": [
+                "confusing"
+            ],
+            "transitions": [
+                "confirm",
+                "resolve",
+                "falsepositive",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2014-08-19T22:41:10+0000",
+            "updateDate": "2022-09-26T08:05:00+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN"
+        },
+        {
+            "key": "AYN47MdPWrBK7jBo_-NQ",
+            "rule": "java:S3252",
+            "severity": "CRITICAL",
+            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/AccumuloStorageHandler.java",
+            "project": "HIVE",
+            "line": 104,
+            "hash": "b5ae1587dac7428c5f5c3c8082293f7d",
+            "textRange": {
+                "startLine": 104,
+                "endLine": 104,
+                "startOffset": 37,
+                "endOffset": 47
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Use static access with \"org.apache.hadoop.hive.accumulo.AccumuloConnectionParameters\" for \"TABLE_NAME\".",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "khorgath@apache.org",
+            "tags": [
+                "confusing"
+            ],
+            "transitions": [
+                "confirm",
+                "resolve",
+                "falsepositive",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2014-08-19T22:41:10+0000",
+            "updateDate": "2022-09-26T08:05:00+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN"
+        },
+        {
+            "key": "AYN47MdPWrBK7jBo_-NR",
+            "rule": "java:S3252",
+            "severity": "CRITICAL",
+            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/AccumuloStorageHandler.java",
+            "project": "HIVE",
+            "line": 135,
+            "hash": "8fd824389ac6363076704121abb2e1ed",
+            "textRange": {
+                "startLine": 135,
+                "endLine": 135,
+                "startOffset": 65,
+                "endOffset": 75
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Use static access with \"org.apache.hadoop.hive.accumulo.AccumuloConnectionParameters\" for \"TABLE_NAME\".",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "khorgath@apache.org",
+            "tags": [
+                "confusing"
+            ],
+            "transitions": [
+                "confirm",
+                "resolve",
+                "falsepositive",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2014-08-19T22:41:10+0000",
+            "updateDate": "2022-09-26T08:05:00+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN"
+        },
+        {
+            "key": "AYN47MdPWrBK7jBo_-NM",
+            "rule": "java:S1488",
+            "severity": "MINOR",
+            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/AccumuloStorageHandler.java",
+            "project": "HIVE",
+            "line": 151,
+            "hash": "cbcc76aca4ce9bf4758dd83959ff0e39",
+            "textRange": {
+                "startLine": 151,
+                "endLine": 151,
+                "startOffset": 25,
+                "endOffset": 76
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Immediately return this expression instead of assigning it to the temporary variable \"columnTypes\".",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "sershe@apache.org",
+            "tags": [
+                "clumsy"
+            ],
+            "transitions": [
+                "confirm",
+                "resolve",
+                "falsepositive",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2017-04-20T18:46:36+0000",
+            "updateDate": "2022-09-26T08:05:00+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN"
+        },
+        {
+            "key": "AYN47MdPWrBK7jBo_-NN",
+            "rule": "java:S1488",
+            "severity": "MINOR",
+            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/AccumuloStorageHandler.java",
+            "project": "HIVE",
+            "line": 157,
+            "hash": "9ab0dbe82dee9a7b45ca4814733a5660",
+            "textRange": {
+                "startLine": 157,
+                "endLine": 157,
+                "startOffset": 23,
+                "endOffset": 81
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Immediately return this expression instead of assigning it to the temporary variable \"tableName\".",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "sershe@apache.org",
+            "tags": [
+                "clumsy"
+            ],
+            "transitions": [
+                "confirm",
+                "resolve",
+                "falsepositive",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2017-04-20T18:46:36+0000",
+            "updateDate": "2022-09-26T08:05:00+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN"
+        },
+        {
+            "key": "AYN47MdPWrBK7jBo_-NS",
+            "rule": "java:S3252",
+            "severity": "CRITICAL",
+            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/AccumuloStorageHandler.java",
+            "project": "HIVE",
+            "line": 194,
+            "hash": "8fd824389ac6363076704121abb2e1ed",
+            "textRange": {
+                "startLine": 194,
+                "endLine": 194,
+                "startOffset": 65,
+                "endOffset": 75
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Use static access with \"org.apache.hadoop.hive.accumulo.AccumuloConnectionParameters\" for \"TABLE_NAME\".",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "khorgath@apache.org",
+            "tags": [
+                "confusing"
+            ],
+            "transitions": [
+                "confirm",
+                "resolve",
+                "falsepositive",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2014-08-19T22:41:10+0000",
+            "updateDate": "2022-09-26T08:05:00+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN"
+        },
+        {
+            "key": "AYN47MdPWrBK7jBo_-NT",
+            "rule": "java:S3252",
+            "severity": "CRITICAL",
+            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/AccumuloStorageHandler.java",
+            "project": "HIVE",
+            "line": 198,
+            "hash": "ecf912802f45af4b75aa301d6a82d3cd",
+            "textRange": {
+                "startLine": 198,
+                "endLine": 198,
+                "startOffset": 46,
+                "endOffset": 56
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Use static access with \"org.apache.hadoop.hive.accumulo.AccumuloConnectionParameters\" for \"TABLE_NAME\".",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "khorgath@apache.org",
+            "tags": [
+                "confusing"
+            ],
+            "transitions": [
+                "confirm",
+                "resolve",
+                "falsepositive",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2014-08-19T22:41:10+0000",
+            "updateDate": "2022-09-26T08:05:00+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN"
+        },
+        {
+            "key": "AYN47MdPWrBK7jBo_-NK",
+            "rule": "java:S2629",
+            "severity": "MAJOR",
+            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/AccumuloStorageHandler.java",
+            "project": "HIVE",
+            "line": 221,
+            "hash": "4db6d029ce45936cac8d3cec218e2892",
+            "textRange": {
+                "startLine": 221,
+                "endLine": 221,
+                "startOffset": 13,
+                "endOffset": 64
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Use the built-in formatting to construct this argument.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "sershe@apache.org",
+            "tags": [
+                "performance"
+            ],
+            "transitions": [
+                "confirm",
+                "resolve",
+                "falsepositive",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2017-04-20T18:46:36+0000",
+            "updateDate": "2022-09-26T08:05:00+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN"
+        },
+        {
+            "key": "AYN47MdPWrBK7jBo_-NU",
+            "rule": "java:S3457",
+            "severity": "MAJOR",
+            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/AccumuloStorageHandler.java",
+            "project": "HIVE",
+            "line": 221,
+            "hash": "4db6d029ce45936cac8d3cec218e2892",
+            "textRange": {
+                "startLine": 221,
+                "endLine": 221,
+                "startOffset": 4,
+                "endOffset": 65
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Format specifiers should be used instead of string concatenation.",
+            "effort": "10min",
+            "debt": "10min",
+            "author": "sershe@apache.org",
+            "tags": [
+                "cert",
+                "confusing"
+            ],
+            "transitions": [
+                "confirm",
+                "resolve",
+                "falsepositive",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2017-04-20T18:46:36+0000",
+            "updateDate": "2022-09-26T08:05:00+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN"
+        },
+        {
+            "key": "AYN47MdPWrBK7jBo_-NV",
+            "rule": "java:S1117",
+            "severity": "MAJOR",
+            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/AccumuloStorageHandler.java",
+            "project": "HIVE",
+            "line": 223,
+            "hash": "041d771c4230e1740c2e656166c94f7d",
+            "textRange": {
+                "startLine": 223,
+                "endLine": 223,
+                "startOffset": 18,
+                "endOffset": 22
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Rename \"conf\" which hides the field declared at line 75.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "khorgath@gmail.com",
+            "tags": [
+                "cert",
+                "pitfall",
+                "suspicious"
+            ],
+            "transitions": [
+                "confirm",
+                "resolve",
+                "falsepositive",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2017-07-17T03:18:09+0000",
+            "updateDate": "2022-09-26T08:05:00+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN"
+        },
+        {
+            "key": "AYN47MdPWrBK7jBo_-NL",
+            "rule": "java:S2629",
+            "severity": "MAJOR",
+            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/AccumuloStorageHandler.java",
+            "project": "HIVE",
+            "line": 239,
+            "hash": "b643a1b0100ee315f1b69e6350d3d6fc",
+            "textRange": {
+                "startLine": 239,
+                "endLine": 239,
+                "startOffset": 20,
+                "endOffset": 93
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Use the built-in formatting to construct this argument.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "khorgath@gmail.com",
+            "tags": [
+                "performance"
+            ],
+            "transitions": [
+                "confirm",
+                "resolve",
+                "falsepositive",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2017-07-17T03:18:09+0000",
+            "updateDate": "2022-09-26T08:05:00+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN"
+        },
+        {
+            "key": "AYN47MdPWrBK7jBo_-NW",
+            "rule": "java:S3457",
+            "severity": "MAJOR",
+            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/AccumuloStorageHandler.java",
+            "project": "HIVE",
+            "line": 239,
+            "hash": "b643a1b0100ee315f1b69e6350d3d6fc",
+            "textRange": {
+                "startLine": 239,
+                "endLine": 239,
+                "startOffset": 10,
+                "endOffset": 94
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Format specifiers should be used instead of string concatenation.",
+            "effort": "10min",
+            "debt": "10min",
+            "author": "khorgath@gmail.com",
+            "tags": [
+                "cert",
+                "confusing"
+            ],
+            "transitions": [
+                "confirm",
+                "resolve",
+                "falsepositive",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2017-07-17T03:18:09+0000",
+            "updateDate": "2022-09-26T08:05:00+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN"
+        },
+        {
+            "key": "AYN47MdPWrBK7jBo_-NX",
+            "rule": "java:S3457",
+            "severity": "MAJOR",
+            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/AccumuloStorageHandler.java",
+            "project": "HIVE",
+            "line": 244,
+            "hash": "9b90677f8e5a651cb26f73175364b71d",
+            "textRange": {
+                "startLine": 244,
+                "endLine": 244,
+                "startOffset": 10,
+                "endOffset": 80
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Format specifiers should be used instead of string concatenation.",
+            "effort": "10min",
+            "debt": "10min",
+            "author": "khorgath@gmail.com",
+            "tags": [
+                "cert",
+                "confusing"
+            ],
+            "transitions": [
+                "confirm",
+                "resolve",
+                "falsepositive",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2017-07-17T03:18:09+0000",
+            "updateDate": "2022-09-26T08:05:00+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN"
+        },
+        {
+            "key": "AYN47MdOWrBK7jBo_-NH",
+            "rule": "java:S112",
+            "severity": "MAJOR",
+            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/AccumuloStorageHandler.java",
+            "project": "HIVE",
+            "line": 249,
+            "hash": "5326cbbe7e6e8b29dc1ae4f9dde789a0",
+            "textRange": {
+                "startLine": 249,
+                "endLine": 249,
+                "startOffset": 18,
+                "endOffset": 34
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Define and throw a dedicated exception instead of using a generic one.",
+            "effort": "20min",
+            "debt": "20min",
+            "author": "khorgath@gmail.com",
+            "tags": [
+                "cert",
+                "cwe",
+                "error-handling"
+            ],
+            "transitions": [
+                "confirm",
+                "resolve",
+                "falsepositive",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2017-07-17T03:18:09+0000",
+            "updateDate": "2022-09-26T08:05:00+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN"
+        },
+        {
+            "key": "AYN47MdPWrBK7jBo_-NY",
+            "rule": "java:S3252",
+            "severity": "CRITICAL",
+            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/AccumuloStorageHandler.java",
+            "project": "HIVE",
+            "line": 262,
+            "hash": "8fd824389ac6363076704121abb2e1ed",
+            "textRange": {
+                "startLine": 262,
+                "endLine": 262,
+                "startOffset": 65,
+                "endOffset": 75
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Use static access with \"org.apache.hadoop.hive.accumulo.AccumuloConnectionParameters\" for \"TABLE_NAME\".",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "khorgath@apache.org",
+            "tags": [
+                "confusing"
+            ],
+            "transitions": [
+                "confirm",
+                "resolve",
+                "falsepositive",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2014-08-19T22:41:10+0000",
+            "updateDate": "2022-09-26T08:05:00+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN"
+        },
+        {
+            "key": "AYN47MdPWrBK7jBo_-NZ",
+            "rule": "java:S3252",
+            "severity": "CRITICAL",
+            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/AccumuloStorageHandler.java",
+            "project": "HIVE",
+            "line": 266,
+            "hash": "3a872ae479c023cec00bf1f22a10959d",
+            "textRange": {
+                "startLine": 266,
+                "endLine": 266,
+                "startOffset": 46,
+                "endOffset": 56
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Use static access with \"org.apache.hadoop.hive.accumulo.AccumuloConnectionParameters\" for \"TABLE_NAME\".",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "khorgath@apache.org",
+            "tags": [
+                "confusing"
+            ],
+            "transitions": [
+                "confirm",
+                "resolve",
+                "falsepositive",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2014-08-19T22:41:10+0000",
+            "updateDate": "2022-09-26T08:05:00+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN"
+        },
+        {
+            "key": "AYN47MdPWrBK7jBo_-Na",
+            "rule": "java:S2293",
+            "severity": "MINOR",
+            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/AccumuloStorageHandler.java",
+            "project": "HIVE",
+            "line": 310,
+            "hash": "2ec85ebe6344f6091652f06131317908",
+            "textRange": {
+                "startLine": 310,
+                "endLine": 310,
+                "startOffset": 38,
+                "endOffset": 46
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Replace the type specification in this constructor call with the diamond operator (\"<>\").",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "sershe@apache.org",
+            "tags": [
+                "clumsy"
+            ],
+            "transitions": [
+                "confirm",
+                "resolve",
+                "falsepositive",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2017-04-20T18:46:36+0000",
+            "updateDate": "2022-09-26T08:05:00+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN"
+        },
+        {
+            "key": "AYN47MdOWrBK7jBo_-NG",
+            "rule": "java:S1066",
+            "severity": "MAJOR",
+            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/AccumuloStorageHandler.java",
+            "project": "HIVE",
+            "line": 368,
+            "hash": "c5f86696b69a048f833b2d14531979cb",
+            "textRange": {
+                "startLine": 368,
+                "endLine": 368,
+                "startOffset": 8,
+                "endOffset": 10
+            },
+            "flows": [
+                {
+                    "locations": [
+                        {
+                            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/AccumuloStorageHandler.java",
+                            "textRange": {
+                                "startLine": 365,
+                                "endLine": 365,
+                                "startOffset": 6,
+                                "endOffset": 8
+                            }
+                        }
+                    ]
+                }
+            ],
+            "status": "OPEN",
+            "message": "Merge this if statement with the enclosing one.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "sershe@apache.org",
+            "tags": [
+                "clumsy"
+            ],
+            "transitions": [
+                "confirm",
+                "resolve",
+                "falsepositive",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2017-04-20T18:46:36+0000",
+            "updateDate": "2022-09-26T08:05:00+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN"
+        },
+        {
+            "key": "AYN47MdPWrBK7jBo_-Nb",
+            "rule": "java:S2147",
+            "severity": "MINOR",
+            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/AccumuloStorageHandler.java",
+            "project": "HIVE",
+            "line": 374,
+            "hash": "e68ade549c6fdc2c9247c9283a19041c",
+            "textRange": {
+                "startLine": 374,
+                "endLine": 374,
+                "startOffset": 13,
+                "endOffset": 35
+            },
+            "flows": [
+                {
+                    "locations": [
+                        {
+                            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/AccumuloStorageHandler.java",
+                            "textRange": {
+                                "startLine": 372,
+                                "endLine": 374,
+                                "startOffset": 6,
+                                "endOffset": 5
+                            },
+                            "msg": "Combine with this catch"
+                        }
+                    ]
+                }
+            ],
+            "status": "OPEN",
+            "message": "Combine this catch with the one at line 372, which has the same body.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "khorgath@apache.org",
+            "tags": [
+                "clumsy"
+            ],
+            "transitions": [
+                "confirm",
+                "resolve",
+                "falsepositive",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2014-08-19T22:41:10+0000",
+            "updateDate": "2022-09-26T08:05:00+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN"
+        },
+        {
+            "key": "AYN47MdPWrBK7jBo_-Nc",
+            "rule": "java:S2147",
+            "severity": "MINOR",
+            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/AccumuloStorageHandler.java",
+            "project": "HIVE",
+            "line": 376,
+            "hash": "04e8d3980e51dae5e2f87ecb9d482f84",
+            "textRange": {
+                "startLine": 376,
+                "endLine": 376,
+                "startOffset": 13,
+                "endOffset": 32
+            },
+            "flows": [
+                {
+                    "locations": [
+                        {
+                            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/AccumuloStorageHandler.java",
+                            "textRange": {
+                                "startLine": 372,
+                                "endLine": 374,
+                                "startOffset": 6,
+                                "endOffset": 5
+                            },
+                            "msg": "Combine with this catch"
+                        }
+                    ]
+                }
+            ],
+            "status": "OPEN",
+            "message": "Combine this catch with the one at line 372, which has the same body.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "khorgath@apache.org",
+            "tags": [
+                "clumsy"
+            ],
+            "transitions": [
+                "confirm",
+                "resolve",
+                "falsepositive",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2014-08-19T22:41:10+0000",
+            "updateDate": "2022-09-26T08:05:00+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN"
+        },
+        {
+            "key": "AYN47MdPWrBK7jBo_-Nd",
+            "rule": "java:S2147",
+            "severity": "MINOR",
+            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/AccumuloStorageHandler.java",
+            "project": "HIVE",
+            "line": 409,
+            "hash": "1925b59a51940e3a5725240ccd42e590",
+            "textRange": {
+                "startLine": 409,
+                "endLine": 409,
+                "startOffset": 15,
+                "endOffset": 42
+            },
+            "flows": [
+                {
+                    "locations": [
+                        {
+                            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/AccumuloStorageHandler.java",
+                            "textRange": {
+                                "startLine": 407,
+                                "endLine": 409,
+                                "startOffset": 8,
+                                "endOffset": 7
+                            },
+                            "msg": "Combine with this catch"
+                        }
+                    ]
+                }
+            ],
+            "status": "OPEN",
+            "message": "Combine this catch with the one at line 407, which has the same body.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "khorgath@apache.org",
+            "tags": [
+                "clumsy"
+            ],
+            "transitions": [
+                "confirm",
+                "resolve",
+                "falsepositive",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2014-08-19T22:41:10+0000",
+            "updateDate": "2022-09-26T08:05:00+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN"
+        },
+        {
+            "key": "AYN47MdPWrBK7jBo_-Ne",
+            "rule": "java:S2147",
+            "severity": "MINOR",
+            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/AccumuloStorageHandler.java",
+            "project": "HIVE",
+            "line": 411,
+            "hash": "22bd6df5ba60ec997f720f4369549b14",
+            "textRange": {
+                "startLine": 411,
+                "endLine": 411,
+                "startOffset": 15,
+                "endOffset": 39
+            },
+            "flows": [
+                {
+                    "locations": [
+                        {
+                            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/AccumuloStorageHandler.java",
+                            "textRange": {
+                                "startLine": 407,
+                                "endLine": 409,
+                                "startOffset": 8,
+                                "endOffset": 7
+                            },
+                            "msg": "Combine with this catch"
+                        }
+                    ]
+                }
+            ],
+            "status": "OPEN",
+            "message": "Combine this catch with the one at line 407, which has the same body.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "khorgath@apache.org",
+            "tags": [
+                "clumsy"
+            ],
+            "transitions": [
+                "confirm",
+                "resolve",
+                "falsepositive",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2014-08-19T22:41:10+0000",
+            "updateDate": "2022-09-26T08:05:00+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN"
+        },
+        {
+            "key": "AYN47MdOWrBK7jBo_-NI",
+            "rule": "java:S112",
+            "severity": "MAJOR",
+            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/AccumuloStorageHandler.java",
+            "project": "HIVE",
+            "line": 431,
+            "hash": "7d61ca2ca40b3b01c0d9d9b694b118cf",
+            "textRange": {
+                "startLine": 431,
+                "endLine": 431,
+                "startOffset": 16,
+                "endOffset": 32
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Define and throw a dedicated exception instead of using a generic one.",
+            "effort": "20min",
+            "debt": "20min",
+            "author": "khorgath@apache.org",
+            "tags": [
+                "cert",
+                "cwe",
+                "error-handling"
+            ],
+            "transitions": [
+                "confirm",
+                "resolve",
+                "falsepositive",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2014-08-19T22:41:10+0000",
+            "updateDate": "2022-09-26T08:05:00+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN"
+        },
+        {
+            "key": "AYN47MdPWrBK7jBo_-Nf",
+            "rule": "java:S3457",
+            "severity": "MAJOR",
+            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/AccumuloStorageHandler.java",
+            "project": "HIVE",
+            "line": 479,
+            "hash": "ab13e92ecb33970092f410c0b5c0355b",
+            "textRange": {
+                "startLine": 479,
+                "endLine": 479,
+                "startOffset": 8,
+                "endOffset": 79
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Format specifiers should be used instead of string concatenation.",
+            "effort": "10min",
+            "debt": "10min",
+            "author": "khorgath@gmail.com",
+            "tags": [
+                "cert",
+                "confusing"
+            ],
+            "transitions": [
+                "confirm",
+                "resolve",
+                "falsepositive",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2017-07-17T03:18:09+0000",
+            "updateDate": "2022-09-26T08:05:00+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN"
+        },
+        {
+            "key": "AYN47MdOWrBK7jBo_-NJ",
+            "rule": "java:S112",
+            "severity": "MAJOR",
+            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/AccumuloStorageHandler.java",
+            "project": "HIVE",
+            "line": 481,
+            "hash": "5326cbbe7e6e8b29dc1ae4f9dde789a0",
+            "textRange": {
+                "startLine": 481,
+                "endLine": 481,
+                "startOffset": 18,
+                "endOffset": 34
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Define and throw a dedicated exception instead of using a generic one.",
+            "effort": "20min",
+            "debt": "20min",
+            "author": "sershe@apache.org",
+            "tags": [
+                "cert",
+                "cwe",
+                "error-handling"
+            ],
+            "transitions": [
+                "confirm",
+                "resolve",
+                "falsepositive",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2017-04-20T18:46:36+0000",
+            "updateDate": "2022-09-26T08:05:00+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN"
+        },
+        {
+            "key": "AYN47MdHWrBK7jBo_-Mz",
+            "rule": "java:S3457",
+            "severity": "MAJOR",
+            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/HiveAccumuloHelper.java",
+            "project": "HIVE",
+            "line": 86,
+            "hash": "ae1a9362160abc6ab6dcafa7f9d872cb",
+            "textRange": {
+                "startLine": 86,
+                "endLine": 86,
+                "startOffset": 6,
+                "endOffset": 77
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Format specifiers should be used instead of string concatenation.",
+            "effort": "10min",
+            "debt": "10min",
+            "author": "khorgath@gmail.com",
+            "tags": [
+                "cert",
+                "confusing"
+            ],
+            "transitions": [
+                "confirm",
+                "resolve",
+                "falsepositive",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2017-07-17T03:18:09+0000",
+            "updateDate": "2022-09-26T08:05:00+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN"
+        },
+        {
+            "key": "AYN47MdHWrBK7jBo_-M0",
+            "rule": "java:S1452",
+            "severity": "CRITICAL",
+            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/HiveAccumuloHelper.java",
+            "project": "HIVE",
+            "line": 95,
+            "hash": "ef7d0deb04d52902af74d8de61288cca",
+            "textRange": {
+                "startLine": 95,
+                "endLine": 95,
+                "startOffset": 15,
+                "endOffset": 16
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove usage of generic wildcard type.",
+            "effort": "20min",
+            "debt": "20min",
+            "author": "khorgath@gmail.com",
+            "tags": [
+                "pitfall"
+            ],
+            "transitions": [
+                "confirm",
+                "resolve",
+                "falsepositive",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2017-07-17T03:18:09+0000",
+            "updateDate": "2022-09-26T08:05:00+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN"
+        },
+        {
+            "key": "AYN47MdHWrBK7jBo_-M1",
+            "rule": "java:S1452",
+            "severity": "CRITICAL",
+            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/HiveAccumuloHelper.java",
+            "project": "HIVE",
+            "line": 142,
+            "hash": "b0781719109350fa935ed1486f8db436",
+            "textRange": {
+                "startLine": 142,
+                "endLine": 142,
+                "startOffset": 15,
+                "endOffset": 16
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove usage of generic wildcard type.",
+            "effort": "20min",
+            "debt": "20min",
+            "author": "khorgath@gmail.com",
+            "tags": [
+                "pitfall"
+            ],
+            "transitions": [
+                "confirm",
+                "resolve",
+                "falsepositive",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2017-07-17T03:18:09+0000",
+            "updateDate": "2022-09-26T08:05:00+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN"
+        },
+        {
+            "key": "AYN47MdHWrBK7jBo_-M2",
+            "rule": "java:S2293",
+            "severity": "MINOR",
+            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/HiveAccumuloHelper.java",
+            "project": "HIVE",
+            "line": 152,
+            "hash": "d3fc17e1afb64132376d8f0c9fcb01e8",
+            "textRange": {
+                "startLine": 152,
+                "endLine": 152,
+                "startOffset": 22,
+                "endOffset": 53
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Replace the type specification in this constructor call with the diamond operator (\"<>\").",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "khorgath@gmail.com",
+            "tags": [
+                "clumsy"
+            ],
+            "transitions": [
+                "confirm",
+                "resolve",
+                "falsepositive",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2017-07-17T03:18:09+0000",
+            "updateDate": "2022-09-26T08:05:00+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN"
+        },
+        {
+            "key": "AYN47MdHWrBK7jBo_-My",
+            "rule": "java:S1141",
+            "severity": "MAJOR",
+            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/HiveAccumuloHelper.java",
+            "project": "HIVE",
+            "line": 212,
+            "hash": "80d5b17efc16ace990c07580fc3e85eb",
+            "textRange": {
+                "startLine": 212,
+                "endLine": 212,
+                "startOffset": 8,
+                "endOffset": 11
+            },
+            "flows": [
+                {
+                    "locations": [
+                        {
+                            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/HiveAccumuloHelper.java",
+                            "textRange": {
+                                "startLine": 189,
+                                "endLine": 189,
+                                "startOffset": 6,
+                                "endOffset": 9
+                            },
+                            "msg": "Nesting + 1"
+                        }
+                    ]
+                }
+            ],
+            "status": "OPEN",
+            "message": "Extract this nested try block into a separate method.",
+            "effort": "20min",
+            "debt": "20min",
+            "author": "khorgath@gmail.com",
+            "tags": [
+                "confusing",
+                "error-handling"
+            ],
+            "transitions": [
+                "confirm",
+                "resolve",
+                "falsepositive",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2017-07-17T03:18:09+0000",
+            "updateDate": "2022-09-26T08:05:00+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN"
+        },
+        {
+            "key": "AYN47MdHWrBK7jBo_-M3",
+            "rule": "java:S3252",
+            "severity": "CRITICAL",
+            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/HiveAccumuloHelper.java",
+            "project": "HIVE",
+            "line": 235,
+            "hash": "0a51a61e518cad113493d3b489ca9e7f",
+            "textRange": {
+                "startLine": 235,
+                "endLine": 235,
+                "startOffset": 26,
+                "endOffset": 42
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Use static access with \"org.apache.accumulo.core.client.mapred.AbstractInputFormat\" for \"setConnectorInfo\".",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "khorgath@gmail.com",
+            "tags": [
+                "confusing"
+            ],
+            "transitions": [
+                "confirm",
+                "resolve",
+                "falsepositive",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2017-07-17T03:18:09+0000",
+            "updateDate": "2022-09-26T08:05:00+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN"
+        },
+        {
+            "key": "AYN47MdHWrBK7jBo_-M4",
+            "rule": "java:S1130",
+            "severity": "MINOR",
+            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/HiveAccumuloHelper.java",
+            "project": "HIVE",
+            "line": 261,
+            "hash": "ca06b7c606de8b70d5168f1f483a2bdf",
+            "textRange": {
+                "startLine": 261,
+                "endLine": 261,
+                "startOffset": 29,
+                "endOffset": 40
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "khorgath@gmail.com",
+            "tags": [
+                "clumsy",
+                "error-handling",
+                "redundant",
+                "unused"
+            ],
+            "transitions": [
+                "confirm",
+                "resolve",
+                "falsepositive",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2017-07-17T03:18:09+0000",
+            "updateDate": "2022-09-26T08:05:00+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN"
+        },
+        {
+            "key": "AYN47MdHWrBK7jBo_-M5",
+            "rule": "java:S3252",
+            "severity": "CRITICAL",
+            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/HiveAccumuloHelper.java",
+            "project": "HIVE",
+            "line": 264,
+            "hash": "1b085c4c45dcb8510c6fb0c21c3620e3",
+            "textRange": {
+                "startLine": 264,
+                "endLine": 264,
+                "startOffset": 26,
+                "endOffset": 46
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Use static access with \"org.apache.accumulo.core.client.mapred.AbstractInputFormat\" for \"setZooKeeperInstance\".",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "khorgath@gmail.com",
+            "tags": [
+                "confusing"
+            ],
+            "transitions": [
+                "confirm",
+                "resolve",
+                "falsepositive",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2017-07-17T03:18:09+0000",
+            "updateDate": "2022-09-26T08:05:00+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN"
+        },
+        {
+            "key": "AYN47MdHWrBK7jBo_-M6",
+            "rule": "java:S1130",
+            "severity": "MINOR",
+            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/HiveAccumuloHelper.java",
+            "project": "HIVE",
+            "line": 277,
+            "hash": "ca06b7c606de8b70d5168f1f483a2bdf",
+            "textRange": {
+                "startLine": 277,
+                "endLine": 277,
+                "startOffset": 29,
+                "endOffset": 40
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "khorgath@gmail.com",
+            "tags": [
+                "clumsy",
+                "error-handling",
+                "redundant",
+                "unused"
+            ],
+            "transitions": [
+                "confirm",
+                "resolve",
+                "falsepositive",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2017-07-17T03:18:09+0000",
+            "updateDate": "2022-09-26T08:05:00+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN"
+        },
+        {
+            "key": "AYN47MdHWrBK7jBo_-M7",
+            "rule": "java:S3252",
+            "severity": "CRITICAL",
+            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/HiveAccumuloHelper.java",
+            "project": "HIVE",
+            "line": 294,
+            "hash": "d3dbb7a8e2010aeaa0b1e5c1460a9f60",
+            "textRange": {
+                "startLine": 294,
+                "endLine": 294,
+                "startOffset": 26,
+                "endOffset": 41
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Use static access with \"org.apache.accumulo.core.client.mapred.AbstractInputFormat\" for \"setMockInstance\".",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "khorgath@gmail.com",
+            "tags": [
+                "confusing"
+            ],
+            "transitions": [
+                "confirm",
+                "resolve",
+                "falsepositive",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2017-07-17T03:18:09+0000",
+            "updateDate": "2022-09-26T08:05:00+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN"
+        },
+        {
+            "key": "AYN47MdHWrBK7jBo_-M8",
+            "rule": "java:S1874",
+            "severity": "MINOR",
+            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/HiveAccumuloHelper.java",
+            "project": "HIVE",
+            "line": 294,
+            "hash": "d3dbb7a8e2010aeaa0b1e5c1460a9f60",
+            "textRange": {
+                "startLine": 294,
+                "endLine": 294,
+                "startOffset": 26,
+                "endOffset": 41
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this use of \"setMockInstance\"; it is deprecated.",
+            "effort": "15min",
+            "debt": "15min",
+            "author": "khorgath@gmail.com",
+            "tags": [
+                "cert",
+                "cwe",
+                "obsolete"
+            ],
+            "transitions": [
+                "confirm",
+                "resolve",
+                "falsepositive",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2017-07-17T03:18:09+0000",
+            "updateDate": "2022-09-26T08:05:00+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN"
+        },
+        {
+            "key": "AYN47MdHWrBK7jBo_-M9",
+            "rule": "java:S1874",
+            "severity": "MINOR",
+            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/HiveAccumuloHelper.java",
+            "project": "HIVE",
+            "line": 307,
+            "hash": "bb1cd755d83d481065c25951313ced6c",
+            "textRange": {
+                "startLine": 307,
+                "endLine": 307,
+                "startOffset": 27,
+                "endOffset": 42
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this use of \"setMockInstance\"; it is deprecated.",
+            "effort": "15min",
+            "debt": "15min",
+            "author": "khorgath@gmail.com",
+            "tags": [
+                "cert",
+                "cwe",
+                "obsolete"
+            ],
+            "transitions": [
+                "confirm",
+                "resolve",
+                "falsepositive",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2017-07-17T03:18:09+0000",
+            "updateDate": "2022-09-26T08:05:00+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN"
+        },
+        {
+            "key": "AYN47MdHWrBK7jBo_-M-",
+            "rule": "java:S1452",
+            "severity": "CRITICAL",
+            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/HiveAccumuloHelper.java",
+            "project": "HIVE",
+            "line": 339,
+            "hash": "8d023be820f5cba6e1183531e422aa8d",
+            "textRange": {
+                "startLine": 339,
+                "endLine": 339,
+                "startOffset": 15,
+                "endOffset": 16
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove usage of generic wildcard type.",
+            "effort": "20min",
+            "debt": "20min",
+            "author": "khorgath@gmail.com",
+            "tags": [
+                "pitfall"
+            ],
+            "transitions": [
+                "confirm",
+                "resolve",
+                "falsepositive",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2017-07-17T03:18:09+0000",
+            "updateDate": "2022-09-26T08:05:00+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN"
+        },
+        {
+            "key": "AYN47MdHWrBK7jBo_-Mx",
+            "rule": "java:S112",
+            "severity": "MAJOR",
+            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/HiveAccumuloHelper.java",
+            "project": "HIVE",
+            "line": 339,
+            "hash": "8d023be820f5cba6e1183531e422aa8d",
+            "textRange": {
+                "startLine": 339,
+                "endLine": 339,
+                "startOffset": 156,
+                "endOffset": 165
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Define and throw a dedicated exception instead of using a generic one.",
+            "effort": "20min",
+            "debt": "20min",
+            "author": "khorgath@gmail.com",
+            "tags": [
+                "cert",
+                "cwe",
+                "error-handling"
+            ],
+            "transitions": [
+                "confirm",
+                "resolve",
+                "falsepositive",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2017-07-17T03:18:09+0000",
+            "updateDate": "2022-09-26T08:05:00+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN"
+        },
+        {
+            "key": "AYN47MdHWrBK7jBo_-M_",
+            "rule": "java:S3252",
+            "severity": "CRITICAL",
+            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/HiveAccumuloHelper.java",
+            "project": "HIVE",
+            "line": 348,
+            "hash": "204c3694eb68d1811a8893a1492f3fe2",
+            "textRange": {
+                "startLine": 348,
+                "endLine": 348,
+                "startOffset": 24,
+                "endOffset": 40
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Use static access with \"org.apache.accumulo.core.client.mapreduce.lib.impl.ConfiguratorBase\" for \"setConnectorInfo\".",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "khorgath@gmail.com",
+            "tags": [
+                "confusing"
+            ],
+            "transitions": [
+                "confirm",
+                "resolve",
+                "falsepositive",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2017-07-17T03:18:09+0000",
+            "updateDate": "2022-09-26T08:05:00+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN"
+        },
+        {
+            "key": "AYN47MdHWrBK7jBo_-NA",
+            "rule": "java:S3252",
+            "severity": "CRITICAL",
+            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/HiveAccumuloHelper.java",
+            "project": "HIVE",
+            "line": 355,
+            "hash": "111d7e9e8cb2a1ab675479fe76893216",
+            "textRange": {
+                "startLine": 355,
+                "endLine": 355,
+                "startOffset": 25,
+                "endOffset": 41
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Use static access with \"org.apache.accumulo.core.client.mapreduce.lib.impl.ConfiguratorBase\" for \"setConnectorInfo\".",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "khorgath@gmail.com",
+            "tags": [
+                "confusing"
+            ],
+            "transitions": [
+                "confirm",
+                "resolve",
+                "falsepositive",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2017-07-17T03:18:09+0000",
+            "updateDate": "2022-09-26T08:05:00+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN"
+        },
+        {
+            "key": "AYN47Mc8WrBK7jBo_-Mo",
+            "rule": "common-java:DuplicatedBlocks",
+            "severity": "MAJOR",
+            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/LazyAccumuloMap.java",
+            "project": "HIVE",
+            "flows": [],
+            "status": "OPEN",
+            "message": "1 duplicated blocks of code must be removed.",
+            "effort": "20min",
+            "debt": "20min",
+            "author": "navis@apache.org",
+            "tags": [
+                "pitfall"
+            ],
+            "transitions": [
+                "confirm",
+                "resolve",
+                "falsepositive",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2014-12-18T06:49:25+0000",
+            "updateDate": "2022-09-26T08:05:00+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN"
+        },
+        {
+            "key": "AYN47Mc8WrBK7jBo_-Mq",
+            "rule": "java:S4719",
+            "severity": "MINOR",
+            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/LazyAccumuloMap.java",
+            "project": "HIVE",
+            "line": 86,
+            "hash": "9fc6bcfd28f00b3d8b16de48f1689f8a",
+            "textRange": {
+                "startLine": 86,
+                "endLine": 86,
+                "startOffset": 42,
+                "endOffset": 47
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Replace \"com.google.common.base.Charsets.UTF_8\" with \"StandardCharsets.UTF_8\".",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "khorgath@apache.org",
+            "tags": [
+                "clumsy",
+                "java7"
+            ],
+            "transitions": [
+                "confirm",
+                "resolve",
+                "falsepositive",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2014-08-19T22:41:10+0000",
+            "updateDate": "2022-09-26T08:05:00+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN"
+        },
+        {
+            "key": "AYN47MdLWrBK7jBo_-NC",
+            "rule": "java:S2293",
+            "severity": "MINOR",
+            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/LazyAccumuloRow.java",
+            "project": "HIVE",
+            "line": 51,
+            "hash": "311d8f8fcf45e8a77c13ceae74d1ae73",
+            "textRange": {
+                "startLine": 51,
+                "endLine": 51,
+                "startOffset": 54,
+                "endOffset": 62
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Replace the type specification in this constructor call with the diamond operator (\"<>\").",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "khorgath@apache.org",
+            "tags": [
+                "clumsy"
+            ],
+            "transitions": [
+                "confirm",
+                "resolve",
+                "falsepositive",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2014-08-19T22:41:10+0000",
+            "updateDate": "2022-09-26T08:05:00+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN"
+        },
+        {
+            "key": "AYN47MdLWrBK7jBo_-NB",
+            "rule": "java:S2629",
+            "severity": "MAJOR",
+            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/LazyAccumuloRow.java",
+            "project": "HIVE",
+            "line": 116,
+            "hash": "fb9f667c760ec30eb64f242dd04da0c2",
+            "textRange": {
+                "startLine": 116,
+                "endLine": 117,
+                "startOffset": 18,
+                "endOffset": 90
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Use the built-in formatting to construct this argument.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "khorgath@apache.org",
+            "tags": [
+                "performance"
+            ],
+            "transitions": [
+                "confirm",
+                "resolve",
+                "falsepositive",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2014-08-19T22:41:10+0000",
+            "updateDate": "2022-09-26T08:05:00+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN"
+        },
+        {
+            "key": "AYN47MdLWrBK7jBo_-NF",
+            "rule": "java:S3457",
+            "severity": "MAJOR",
+            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/LazyAccumuloRow.java",
+            "project": "HIVE",
+            "line": 116,
+            "hash": "fb9f667c760ec30eb64f242dd04da0c2",
+            "textRange": {
+                "startLine": 116,
+                "endLine": 117,
+                "startOffset": 8,
+                "endOffset": 91
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Format specifiers should be used instead of string concatenation.",
+            "effort": "10min",
+            "debt": "10min",
+            "author": "khorgath@apache.org",
+            "tags": [
+                "cert",
+                "confusing"
+            ],
+            "transitions": [
+                "confirm",
+                "resolve",
+                "falsepositive",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2014-08-19T22:41:10+0000",
+            "updateDate": "2022-09-26T08:05:00+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN"
+        },
+        {
+            "key": "AYN47McYWrBK7jBo_-ME",
+            "rule": "java:S2293",
+            "severity": "MINOR",
+            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/columns/ColumnEncoding.java",
+            "project": "HIVE",
+            "line": 33,
+            "hash": "c6519bf9d9fc799ecf963723ed9d3743",
+            "textRange": {
+                "startLine": 33,
+                "endLine": 33,
+                "startOffset": 78,
+                "endOffset": 101
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Replace the type specification in this constructor call with the diamond operator (\"<>\").",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "khorgath@apache.org",
+            "tags": [
+                "clumsy"
+            ],
+            "transitions": [
+                "confirm",
+                "resolve",
+                "falsepositive",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2014-08-19T22:41:10+0000",
+            "updateDate": "2022-09-26T08:05:00+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN"
+        },
+        {
+            "key": "AYN47McYWrBK7jBo_-MD",
+            "rule": "java:S1659",
+            "severity": "MINOR",
+            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/columns/ColumnEncoding.java",
+            "project": "HIVE",
+            "line": 34,
+            "hash": "c9a087d26735f98a35e41c8fe331364a",
+            "textRange": {
+                "startLine": 34,
+                "endLine": 34,
+                "startOffset": 6,
+                "endOffset": 16
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Declare \"NAME_CACHE\" on a separate line.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "khorgath@apache.org",
+            "tags": [
+                "cert",
+                "convention"
+            ],
+            "transitions": [
+                "confirm",
+                "resolve",
+                "falsepositive",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2014-08-19T22:41:10+0000",
+            "updateDate": "2022-09-26T08:05:00+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN"
+        },
+        {
+            "key": "AYN47McYWrBK7jBo_-MF",
+            "rule": "java:S2293",
+            "severity": "MINOR",
+            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/columns/ColumnEncoding.java",
+            "project": "HIVE",
+            "line": 34,
+            "hash": "c9a087d26735f98a35e41c8fe331364a",
+            "textRange": {
+                "startLine": 34,
+                "endLine": 34,
+                "startOffset": 30,
+                "endOffset": 53
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Replace the type specification in this constructor call with the diamond operator (\"<>\").",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "khorgath@apache.org",
+            "tags": [
+                "clumsy"
+            ],
+            "transitions": [
+                "confirm",
+                "resolve",
+                "falsepositive",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2014-08-19T22:41:10+0000",
+            "updateDate": "2022-09-26T08:05:00+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN"
+        },
+        {
+            "key": "AYN47McYWrBK7jBo_-MG",
+            "rule": "java:S1659",
+            "severity": "MINOR",
+            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/columns/ColumnEncoding.java",
+            "project": "HIVE",
+            "line": 174,
+            "hash": "47b019e3cee2150ea0a8994d3a901e0a",
+            "textRange": {
+                "startLine": 174,
+                "endLine": 174,
+                "startOffset": 59,
+                "endOffset": 68
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Declare \"encoding2\" on a separate line.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "khorgath@apache.org",
+            "tags": [
+                "cert",
+                "convention"
+            ],
+            "transitions": [
+                "confirm",
+                "resolve",
+                "falsepositive",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2014-08-19T22:41:10+0000",
+            "updateDate": "2022-09-26T08:05:00+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN"
+        },
+        {
+            "key": "AYN47McLWrBK7jBo_-L0",
+            "rule": "java:S2293",
+            "severity": "MINOR",
+            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/columns/ColumnMapper.java",
+            "project": "HIVE",
+            "line": 60,
+            "hash": "a277fb0418a38800b81635f917e7d74f",
+            "textRange": {
+                "startLine": 60,
+                "endLine": 60,
+                "startOffset": 34,
+                "endOffset": 49
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Replace the type specification in this constructor call with the diamond operator (\"<>\").",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "khorgath@apache.org",
+            "tags": [
+                "clumsy"
+            ],
+            "transitions": [
+                "confirm",
+                "resolve",
+                "falsepositive",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2014-08-19T22:41:10+0000",
+            "updateDate": "2022-09-26T08:05:00+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN"
+        },
+        {
+            "key": "AYN47McLWrBK7jBo_-L1",
+            "rule": "java:S1135",
+            "severity": "INFO",
+            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/columns/ColumnMapper.java",
+            "project": "HIVE",
+            "line": 141,
+            "hash": "b01f444ed18297d4f872e1e63c3e0a43",
+            "textRange": {
+                "startLine": 141,
+                "endLine": 141,
+                "startOffset": 0,
+                "endOffset": 58
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Complete the task associated to this TODO comment.",
+            "author": "khorgath@apache.org",
+            "tags": [
+                "cwe"
+            ],
+            "transitions": [
+                "confirm",
+                "resolve",
+                "falsepositive",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2014-08-19T22:41:10+0000",
+            "updateDate": "2022-09-26T08:05:00+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN"
+        },
+        {
+            "key": "AYN47McLWrBK7jBo_-L2",
+            "rule": "java:S3457",
+            "severity": "MAJOR",
+            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/columns/ColumnMapper.java",
+            "project": "HIVE",
+            "line": 167,
+            "hash": "180c15e519302d8d23b118146c881d12",
+            "textRange": {
+                "startLine": 167,
+                "endLine": 168,
+                "startOffset": 4,
+                "endOffset": 42
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Format specifiers should be used instead of string concatenation.",
+            "effort": "10min",
+            "debt": "10min",
+            "author": "khorgath@apache.org",
+            "tags": [
+                "cert",
+                "confusing"
+            ],
+            "transitions": [
+                "confirm",
+                "resolve",
+                "falsepositive",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2014-08-19T22:41:10+0000",
+            "updateDate": "2022-09-26T08:05:00+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN"
+        },
+        {
+            "key": "AYN47McLWrBK7jBo_-Lz",
+            "rule": "java:S2629",
+            "severity": "MAJOR",
+            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/columns/ColumnMapper.java",
+            "project": "HIVE",
+            "line": 167,
+            "hash": "180c15e519302d8d23b118146c881d12",
+            "textRange": {
+                "startLine": 167,
+                "endLine": 168,
+                "startOffset": 14,
+                "endOffset": 41
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Use the built-in formatting to construct this argument.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "khorgath@apache.org",
+            "tags": [
+                "performance"
+            ],
+            "transitions": [
+                "confirm",
+                "resolve",
+                "falsepositive",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2014-08-19T22:41:10+0000",
+            "updateDate": "2022-09-26T08:05:00+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN"
+        },
+        {
+            "key": "AYN47McSWrBK7jBo_-L-",
+            "rule": "java:S1118",
+            "severity": "MAJOR",
+            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/columns/ColumnMappingFactory.java",
+            "project": "HIVE",
+            "line": 32,
+            "hash": "fb12951f392dbceef368aa7393783d40",
+            "textRange": {
+                "startLine": 32,
+                "endLine": 32,
+                "startOffset": 13,
+                "endOffset": 33
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Add a private constructor to hide the implicit public one.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "khorgath@apache.org",
+            "tags": [
+                "design"
+            ],
+            "transitions": [
+                "confirm",
+                "resolve",
+                "falsepositive",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2014-08-19T22:41:10+0000",
+            "updateDate": "2022-09-26T08:05:00+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN"
+        },
+        {
+            "key": "AYN47McSWrBK7jBo_-L_",
+            "rule": "java:S3776",
+            "severity": "CRITICAL",
+            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/columns/ColumnMappingFactory.java",
+            "project": "HIVE",
+            "line": 43,
+            "hash": "36582fdd8c971f9259d0eeb40610103b",
+            "textRange": {
+                "startLine": 43,
+                "endLine": 43,
+                "startOffset": 30,
+                "endOffset": 33
+            },
+            "flows": [
+                {
+                    "locations": [
+                        {
+                            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/columns/ColumnMappingFactory.java",
+                            "textRange": {
+                                "startLine": 51,
+                                "endLine": 51,
+                                "startOffset": 4,
+                                "endOffset": 6
+                            },
+                            "msg": "+1"
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/columns/ColumnMappingFactory.java",
+                            "textRange": {
+                                "startLine": 55,
+                                "endLine": 55,
+                                "startOffset": 6,
+                                "endOffset": 8
+                            },
+                            "msg": "+2 (incl 1 for nesting)"
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/columns/ColumnMappingFactory.java",
+                            "textRange": {
+                                "startLine": 58,
+                                "endLine": 58,
+                                "startOffset": 8,
+                                "endOffset": 12
+                            },
+                            "msg": "+1"
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/columns/ColumnMappingFactory.java",
+                            "textRange": {
+                                "startLine": 61,
+                                "endLine": 61,
+                                "startOffset": 8,
+                                "endOffset": 10
+                            },
+                            "msg": "+3 (incl 2 for nesting)"
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/columns/ColumnMappingFactory.java",
+                            "textRange": {
+                                "startLine": 63,
+                                "endLine": 63,
+                                "startOffset": 10,
+                                "endOffset": 12
+                            },
+                            "msg": "+4 (incl 3 for nesting)"
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/columns/ColumnMappingFactory.java",
+                            "textRange": {
+                                "startLine": 73,
+                                "endLine": 73,
+                                "startOffset": 10,
+                                "endOffset": 14
+                            },
+                            "msg": "+1"
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/columns/ColumnMappingFactory.java",
+                            "textRange": {
+                                "startLine": 78,
+                                "endLine": 78,
+                                "startOffset": 6,
+                                "endOffset": 10
+                            },
+                            "msg": "+1"
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/columns/ColumnMappingFactory.java",
+                            "textRange": {
+                                "startLine": 79,
+                                "endLine": 79,
+                                "startOffset": 6,
+                                "endOffset": 8
+                            },
+                            "msg": "+2 (incl 1 for nesting)"
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/columns/ColumnMappingFactory.java",
+                            "textRange": {
+                                "startLine": 82,
+                                "endLine": 82,
+                                "startOffset": 8,
+                                "endOffset": 12
+                            },
+                            "msg": "+1"
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/columns/ColumnMappingFactory.java",
+                            "textRange": {
+                                "startLine": 89,
+                                "endLine": 89,
+                                "startOffset": 8,
+                                "endOffset": 10
+                            },
+                            "msg": "+3 (incl 2 for nesting)"
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/columns/ColumnMappingFactory.java",
+                            "textRange": {
+                                "startLine": 94,
+                                "endLine": 94,
+                                "startOffset": 8,
+                                "endOffset": 10
+                            },
+                            "msg": "+3 (incl 2 for nesting)"
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/columns/ColumnMappingFactory.java",
+                            "textRange": {
+                                "startLine": 97,
+                                "endLine": 97,
+                                "startOffset": 10,
+                                "endOffset": 14
+                            },
+                            "msg": "+1"
+                        }
+                    ]
+                }
+            ],
+            "status": "OPEN",
+            "message": "Refactor this method to reduce its Cognitive Complexity from 23 to the 15 allowed.",
+            "effort": "13min",
+            "debt": "13min",
+            "author": "khorgath@apache.org",
+            "tags": [
+                "brain-overload"
+            ],
+            "transitions": [
+                "confirm",
+                "resolve",
+                "falsepositive",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2014-08-19T22:41:10+0000",
+            "updateDate": "2022-09-26T08:05:00+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN"
+        },
+        {
+            "key": "AYN47McSWrBK7jBo_-L7",
+            "rule": "java:S135",
+            "severity": "MINOR",
+            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/columns/ColumnMappingFactory.java",
+            "project": "HIVE",
+            "line": 134,
+            "hash": "6679fa07d5cd0b8180e541cc97b31026",
+            "textRange": {
+                "startLine": 134,
+                "endLine": 134,
+                "startOffset": 4,
+                "endOffset": 9
+            },
+            "flows": [
+                {
+                    "locations": [
+                        {
+                            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/columns/ColumnMappingFactory.java",
+                            "textRange": {
+                                "startLine": 155,
+                                "endLine": 155,
+                                "startOffset": 10,
+                                "endOffset": 19
+                            },
+                            "msg": "\"continue\" statement."
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/columns/ColumnMappingFactory.java",
+                            "textRange": {
+                                "startLine": 162,
+                                "endLine": 162,
+                                "startOffset": 6,
+                                "endOffset": 12
+                            },
+                            "msg": "\"break\" statement."
+                        }
+                    ]
+                }
+            ],
+            "status": "OPEN",
+            "message": "Reduce the total number of break and continue statements in this loop to use at most one.",
+            "effort": "20min",
+            "debt": "20min",
+            "author": "khorgath@apache.org",
+            "tags": [
+                "brain-overload"
+            ],
+            "transitions": [
+                "confirm",
+                "resolve",
+                "falsepositive",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2014-08-19T22:41:10+0000",
+            "updateDate": "2022-09-26T08:05:00+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN"
+        },
+        {
+            "key": "AYN47McSWrBK7jBo_-L8",
+            "rule": "java:S2629",
+            "severity": "MAJOR",
+            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/columns/ColumnMappingFactory.java",
+            "project": "HIVE",
+            "line": 136,
+            "hash": "baaef6a46b1a29cf5eb3c72c416c36b8",
+            "textRange": {
+                "startLine": 136,
+                "endLine": 136,
+                "startOffset": 18,
+                "endOffset": 93
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Use the built-in formatting to construct this argument.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "khorgath@apache.org",
+            "tags": [
+                "performance"
+            ],
+            "transitions": [
+                "confirm",
+                "resolve",
+                "falsepositive",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2014-08-19T22:41:10+0000",
+            "updateDate": "2022-09-26T08:05:00+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN"
+        },
+        {
+            "key": "AYN47McSWrBK7jBo_-MB",
+            "rule": "java:S3457",
+            "severity": "MAJOR",
+            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/columns/ColumnMappingFactory.java",
+            "project": "HIVE",
+            "line": 136,
+            "hash": "baaef6a46b1a29cf5eb3c72c416c36b8",
+            "textRange": {
+                "startLine": 136,
+                "endLine": 136,
+                "startOffset": 8,
+                "endOffset": 94
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Format specifiers should be used instead of string concatenation.",
+            "effort": "10min",
+            "debt": "10min",
+            "author": "khorgath@apache.org",
+            "tags": [
+                "cert",
+                "confusing"
+            ],
+            "transitions": [
+                "confirm",
+                "resolve",
+                "falsepositive",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2014-08-19T22:41:10+0000",
+            "updateDate": "2022-09-26T08:05:00+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN"
+        },
+        {
+            "key": "AYN47McSWrBK7jBo_-L9",
+            "rule": "java:S2629",
+            "severity": "MAJOR",
+            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/columns/ColumnMappingFactory.java",
+            "project": "HIVE",
+            "line": 144,
+            "hash": "baaef6a46b1a29cf5eb3c72c416c36b8",
+            "textRange": {
+                "startLine": 144,
+                "endLine": 144,
+                "startOffset": 18,
+                "endOffset": 93
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Use the built-in formatting to construct this argument.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "khorgath@apache.org",
+            "tags": [
+                "performance"
+            ],
+            "transitions": [
+                "confirm",
+                "resolve",
+                "falsepositive",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2014-08-19T22:41:10+0000",
+            "updateDate": "2022-09-26T08:05:00+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN"
+        },
+        {
+            "key": "AYN47McSWrBK7jBo_-MC",
+            "rule": "java:S3457",
+            "severity": "MAJOR",
+            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/columns/ColumnMappingFactory.java",
+            "project": "HIVE",
+            "line": 144,
+            "hash": "baaef6a46b1a29cf5eb3c72c416c36b8",
+            "textRange": {
+                "startLine": 144,
+                "endLine": 144,
+                "startOffset": 8,
+                "endOffset": 94
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Format specifiers should be used instead of string concatenation.",
+            "effort": "10min",
+            "debt": "10min",
+            "author": "khorgath@apache.org",
+            "tags": [
+                "cert",
+                "confusing"
+            ],
+            "transitions": [
+                "confirm",
+                "resolve",
+                "falsepositive",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2014-08-19T22:41:10+0000",
+            "updateDate": "2022-09-26T08:05:00+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN"
+        },
+        {
+            "key": "AYN47McSWrBK7jBo_-MA",
+            "rule": "java:S1659",
+            "severity": "MINOR",
+            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/columns/ColumnMappingFactory.java",
+            "project": "HIVE",
+            "line": 165,
+            "hash": "03a232f8a6a3b4b4ddc5464459731d77",
+            "textRange": {
+                "startLine": 165,
+                "endLine": 165,
+                "startOffset": 48,
+                "endOffset": 50
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Declare \"cq\" on a separate line.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "khorgath@apache.org",
+            "tags": [
+                "cert",
+                "convention"
+            ],
+            "transitions": [
+                "confirm",
+                "resolve",
+                "falsepositive",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2014-08-19T22:41:10+0000",
+            "updateDate": "2022-09-26T08:05:00+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN"
+        },
+        {
+            "key": "AYN47McPWrBK7jBo_-L3",
+            "rule": "java:S1659",
+            "severity": "MINOR",
+            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/columns/HiveAccumuloColumnMapping.java",
+            "project": "HIVE",
+            "line": 32,
+            "hash": "073996d3d60fad06c2ccf13600df72b0",
+            "textRange": {
+                "startLine": 32,
+                "endLine": 32,
+                "startOffset": 33,
+                "endOffset": 48
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Declare \"columnQualifier\" on a separate line.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "khorgath@apache.org",
+            "tags": [
+                "cert",
+                "convention"
+            ],
+            "transitions": [
+                "confirm",
+                "resolve",
+                "falsepositive",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2014-08-19T22:41:10+0000",
+            "updateDate": "2022-09-26T08:05:00+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN"
+        },
+        {
+            "key": "AYN47McPWrBK7jBo_-L4",
+            "rule": "java:S1659",
+            "severity": "MINOR",
+            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/columns/HiveAccumuloColumnMapping.java",
+            "project": "HIVE",
+            "line": 33,
+            "hash": "f97d9a4dbfb3aff19b808a9155d42e24",
+            "textRange": {
+                "startLine": 33,
+                "endLine": 33,
+                "startOffset": 38,
+                "endOffset": 58
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Declare \"columnQualifierBytes\" on a separate line.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "khorgath@apache.org",
+            "tags": [
+                "cert",
+                "convention"
+            ],
+            "transitions": [
+                "confirm",
+                "resolve",
+                "falsepositive",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2014-08-19T22:41:10+0000",
+            "updateDate": "2022-09-26T08:05:00+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN"
+        },
+        {
+            "key": "AYN47McPWrBK7jBo_-L5",
+            "rule": "java:S4719",
+            "severity": "MINOR",
+            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/columns/HiveAccumuloColumnMapping.java",
+            "project": "HIVE",
+            "line": 55,
+            "hash": "52c7abf5c2264cd07498b7f57783aa75",
+            "textRange": {
+                "startLine": 55,
+                "endLine": 55,
+                "startOffset": 57,
+                "endOffset": 62
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Replace \"com.google.common.base.Charsets.UTF_8\" with \"StandardCharsets.UTF_8\".",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "khorgath@apache.org",
+            "tags": [
+                "clumsy",
+                "java7"
+            ],
+            "transitions": [
+                "confirm",
+                "resolve",
+                "falsepositive",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2014-08-19T22:41:10+0000",
+            "updateDate": "2022-09-26T08:05:00+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN"
+        },
+        {
+            "key": "AYN47McPWrBK7jBo_-L6",
+            "rule": "java:S4719",
+            "severity": "MINOR",
+            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/columns/HiveAccumuloColumnMapping.java",
+            "project": "HIVE",
+            "line": 73,
+            "hash": "4d4df4ce27f3e4b0e3223a4ba72034ce",
+            "textRange": {
+                "startLine": 73,
+                "endLine": 73,
+                "startOffset": 63,
+                "endOffset": 68
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Replace \"com.google.common.base.Charsets.UTF_8\" with \"StandardCharsets.UTF_8\".",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "khorgath@apache.org",
+            "tags": [
+                "clumsy",
+                "java7"
+            ],
+            "transitions": [
+                "confirm",
+                "resolve",
+                "falsepositive",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2014-08-19T22:41:10+0000",
+            "updateDate": "2022-09-26T08:05:00+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN"
+        },
+        {
+            "key": "AYN47McHWrBK7jBo_-Lx",
+            "rule": "java:S1659",
+            "severity": "MINOR",
+            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/columns/HiveAccumuloMapColumnMapping.java",
+            "project": "HIVE",
+            "line": 30,
+            "hash": "627ff94a66dd917b89efb6fbbf14d352",
+            "textRange": {
+                "startLine": 30,
+                "endLine": 30,
+                "startOffset": 39,
+                "endOffset": 60
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Declare \"columnQualifierPrefix\" on a separate line.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "khorgath@apache.org",
+            "tags": [
+                "cert",
+                "convention"
+            ],
+            "transitions": [
+                "confirm",
+                "resolve",
+                "falsepositive",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2014-08-19T22:41:10+0000",
+            "updateDate": "2022-09-26T08:05:00+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN"
+        },
+        {
+            "key": "AYN47McHWrBK7jBo_-Ly",
+            "rule": "java:S1659",
+            "severity": "MINOR",
+            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/columns/HiveAccumuloMapColumnMapping.java",
+            "project": "HIVE",
+            "line": 31,
+            "hash": "918241596ad6ea972ff1747b2ca97b26",
+            "textRange": {
+                "startLine": 31,
+                "endLine": 31,
+                "startOffset": 46,
+                "endOffset": 59
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Declare \"valueEncoding\" on a separate line.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "khorgath@apache.org",
+            "tags": [
+                "cert",
+                "convention"
+            ],
+            "transitions": [
+                "confirm",
+                "resolve",
+                "falsepositive",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2014-08-19T22:41:10+0000",
+            "updateDate": "2022-09-26T08:05:00+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN"
+        },
+        {
+            "key": "AYN47McBWrBK7jBo_-Lv",
+            "rule": "java:S2293",
+            "severity": "MINOR",
+            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/mr/AccumuloIndexDefinition.java",
+            "project": "HIVE",
+            "line": 34,
+            "hash": "e4fbbef2bdf27ba7b66815bea8b0ee22",
+            "textRange": {
+                "startLine": 34,
+                "endLine": 34,
+                "startOffset": 29,
+                "endOffset": 45
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Replace the type specification in this constructor call with the diamond operator (\"<>\").",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "sershe@apache.org",
+            "tags": [
+                "clumsy"
+            ],
+            "transitions": [
+                "confirm",
+                "resolve",
+                "falsepositive",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2017-04-20T18:46:36+0000",
+            "updateDate": "2022-09-26T08:05:00+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN"
+        },
+        {
+            "key": "AYN47McBWrBK7jBo_-Lw",
+            "rule": "java:S1172",
+            "severity": "MAJOR",
+            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/mr/AccumuloIndexDefinition.java",
+            "project": "HIVE",
+            "line": 76,
+            "hash": "c46c2f1ce3079abca40c9224475eed36",
+            "textRange": {
+                "startLine": 76,
+                "endLine": 76,
+                "startOffset": 31,
+                "endOffset": 33
+            },
+            "flows": [
+                {
+                    "locations": [
+                        {
+                            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/mr/AccumuloIndexDefinition.java",
+                            "textRange": {
+                                "startLine": 76,
+                                "endLine": 76,
+                                "startOffset": 31,
+                                "endOffset": 33
+                            },
+                            "msg": "Remove this unused method parameter cf\"."
+                        }
+                    ]
+                }
+            ],
+            "status": "OPEN",
+            "message": "Remove this unused method parameter \"cf\".",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "sershe@apache.org",
+            "tags": [
+                "cert",
+                "unused"
+            ],
+            "transitions": [
+                "confirm",
+                "resolve",
+                "falsepositive",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2017-04-20T18:46:36+0000",
+            "updateDate": "2022-09-26T08:05:00+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN"
+        },
+        {
+            "key": "AYN47MbrWrBK7jBo_-Kz",
+            "rule": "java:S1845",
+            "severity": "BLOCKER",
+            "component": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/mr/AccumuloIndexedOutputFormat.java",
+            "project": "HIVE",
+            "line": 58,
+            "hash": "a2c0629941005a32498e37562aa6c7b3",
+            "textRange": {
+                "startLine": 58,
+                "endLine": 58,
+                "startOffset": 30,
+                "endOffset": 33
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Rename field \"LOG\" to prevent any misunderstanding/clash with field \"log\" defined in superclass \"org.apache.accumulo.core.client.mapred.AccumuloOutputFormat\".",
+            "effort": "10min",
+            "debt": "10min",
+            "author": "dam6923@gmail.com",
+            "tags": [
+                "confusing"
+            ],
+            "transitions": [
+                "confirm",
+                "resolve",
+                "falsepositive",
+                "wontfix"
+            ],
+            "actions": [
+                "set_type",
+                "set_tags",
+                "comment",
+                "set_severity",
+                "assign"
+            ],
+            "comments": [],
+            "creationDate": "2017-10-09T19:21:47+0000",
+            "updateDate": "2022-09-26T08:05:00+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN"
+        }
+    ],
+    "components": [
+        {
+            "key": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/LazyAccumuloMap.java",
+            "uuid": "AYN47HtUWrBK7jBo_0DC",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "LazyAccumuloMap.java",
+            "longName": "accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/LazyAccumuloMap.java",
+            "path": "accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/LazyAccumuloMap.java"
+        },
+        {
+            "key": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/AccumuloConnectionParameters.java",
+            "uuid": "AYN47HtUWrBK7jBo_0DD",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "AccumuloConnectionParameters.java",
+            "longName": "accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/AccumuloConnectionParameters.java",
+            "path": "accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/AccumuloConnectionParameters.java"
+        },
+        {
+            "key": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/AccumuloIndexLexicoder.java",
+            "uuid": "AYN47HtUWrBK7jBo_0DF",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "AccumuloIndexLexicoder.java",
+            "longName": "accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/AccumuloIndexLexicoder.java",
+            "path": "accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/AccumuloIndexLexicoder.java"
+        },
+        {
+            "key": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/mr/AccumuloIndexedOutputFormat.java",
+            "uuid": "AYN47HtUWrBK7jBo_0Cj",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "AccumuloIndexedOutputFormat.java",
+            "longName": "accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/mr/AccumuloIndexedOutputFormat.java",
+            "path": "accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/mr/AccumuloIndexedOutputFormat.java"
+        },
+        {
+            "key": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/AccumuloHiveConstants.java",
+            "uuid": "AYN47HtUWrBK7jBo_0DK",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "AccumuloHiveConstants.java",
+            "longName": "accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/AccumuloHiveConstants.java",
+            "path": "accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/AccumuloHiveConstants.java"
+        },
+        {
+            "key": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/AccumuloHiveRow.java",
+            "uuid": "AYN47HtUWrBK7jBo_0CK",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "AccumuloHiveRow.java",
+            "longName": "accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/AccumuloHiveRow.java",
+            "path": "accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/AccumuloHiveRow.java"
+        },
+        {
+            "key": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/AccumuloDefaultIndexScanner.java",
+            "uuid": "AYN47HtUWrBK7jBo_0DL",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "AccumuloDefaultIndexScanner.java",
+            "longName": "accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/AccumuloDefaultIndexScanner.java",
+            "path": "accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/AccumuloDefaultIndexScanner.java"
+        },
+        {
+            "key": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/HiveAccumuloHelper.java",
+            "uuid": "AYN47HtUWrBK7jBo_0DG",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "HiveAccumuloHelper.java",
+            "longName": "accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/HiveAccumuloHelper.java",
+            "path": "accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/HiveAccumuloHelper.java"
+        },
+        {
+            "key": "HIVE",
+            "uuid": "AYN4zUqnx4F8BeUXeHvB",
+            "enabled": true,
+            "qualifier": "TRK",
+            "name": "Hive",
+            "longName": "Hive"
+        },
+        {
+            "key": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/LazyAccumuloRow.java",
+            "uuid": "AYN47HtUWrBK7jBo_0DH",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "LazyAccumuloRow.java",
+            "longName": "accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/LazyAccumuloRow.java",
+            "path": "accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/LazyAccumuloRow.java"
+        },
+        {
+            "key": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/AccumuloStorageHandler.java",
+            "uuid": "AYN47HtUWrBK7jBo_0DI",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "AccumuloStorageHandler.java",
+            "longName": "accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/AccumuloStorageHandler.java",
+            "path": "accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/AccumuloStorageHandler.java"
+        },
+        {
+            "key": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/columns/HiveAccumuloMapColumnMapping.java",
+            "uuid": "AYN47HtUWrBK7jBo_0Ct",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "HiveAccumuloMapColumnMapping.java",
+            "longName": "accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/columns/HiveAccumuloMapColumnMapping.java",
+            "path": "accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/columns/HiveAccumuloMapColumnMapping.java"
+        },
+        {
+            "key": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/columns/ColumnEncoding.java",
+            "uuid": "AYN47HtUWrBK7jBo_0C0",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "ColumnEncoding.java",
+            "longName": "accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/columns/ColumnEncoding.java",
+            "path": "accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/columns/ColumnEncoding.java"
+        },
+        {
+            "key": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/mr/AccumuloIndexDefinition.java",
+            "uuid": "AYN47HtUWrBK7jBo_0Cp",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "AccumuloIndexDefinition.java",
+            "longName": "accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/mr/AccumuloIndexDefinition.java",
+            "path": "accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/mr/AccumuloIndexDefinition.java"
+        },
+        {
+            "key": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/columns/ColumnMapper.java",
+            "uuid": "AYN47HtUWrBK7jBo_0Cv",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "ColumnMapper.java",
+            "longName": "accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/columns/ColumnMapper.java",
+            "path": "accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/columns/ColumnMapper.java"
+        },
+        {
+            "key": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/columns/HiveAccumuloColumnMapping.java",
+            "uuid": "AYN47HtUWrBK7jBo_0Cw",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "HiveAccumuloColumnMapping.java",
+            "longName": "accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/columns/HiveAccumuloColumnMapping.java",
+            "path": "accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/columns/HiveAccumuloColumnMapping.java"
+        },
+        {
+            "key": "HIVE:accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/columns/ColumnMappingFactory.java",
+            "uuid": "AYN47HtUWrBK7jBo_0Cx",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "ColumnMappingFactory.java",
+            "longName": "accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/columns/ColumnMappingFactory.java",
+            "path": "accumulo-handler/src/java/org/apache/hadoop/hive/accumulo/columns/ColumnMappingFactory.java"
+        }
+    ],
+    "rules": [
+        {
+            "key": "java:S2293",
+            "name": "The diamond operator (\"<>\") should be used",
+            "lang": "java",
+            "status": "READY",
+            "langName": "Java"
+        },
+        {
+            "key": "java:S3252",
+            "name": "\"static\" base class members should not be accessed via derived types",
+            "lang": "java",
+            "status": "READY",
+            "langName": "Java"
+        },
+        {
+            "key": "java:S112",
+            "name": "Generic exceptions should never be thrown",
+            "lang": "java",
+            "status": "READY",
+            "langName": "Java"
+        },
+        {
+            "key": "java:S135",
+            "name": "Loops should not contain more than a single \"break\" or \"continue\" statement",
+            "lang": "java",
+            "status": "READY",
+            "langName": "Java"
+        },
+        {
+            "key": "java:S1845",
+            "name": "Methods and field names should not be the same or differ only by capitalization",
+            "lang": "java",
+            "status": "READY",
+            "langName": "Java"
+        },
+        {
+            "key": "java:S4719",
+            "name": "\"StandardCharsets\" constants should be preferred",
+            "lang": "java",
+            "status": "READY",
+            "langName": "Java"
+        },
+        {
+            "key": "java:S1452",
+            "name": "Generic wildcard types should not be used in return types",
+            "lang": "java",
+            "status": "READY",
+            "langName": "Java"
+        },
+        {
+            "key": "java:S1874",
+            "name": "\"@Deprecated\" code should not be used",
+            "lang": "java",
+            "status": "READY",
+            "langName": "Java"
+        },
+        {
+            "key": "java:S1659",
+            "name": "Multiple variables should not be declared on the same line",
+            "lang": "java",
+            "status": "READY",
+            "langName": "Java"
+        },
+        {
+            "key": "java:S2629",
+            "name": "\"Preconditions\" and logging arguments should not require evaluation",
+            "lang": "java",
+            "status": "READY",
+            "langName": "Java"
+        },
+        {
+            "key": "java:S1168",
+            "name": "Empty arrays and collections should be returned instead of null",
+            "lang": "java",
+            "status": "READY",
+            "langName": "Java"
+        },
+        {
+            "key": "java:S3457",
+            "name": "Printf-style format strings should be used correctly",
+            "lang": "java",
+            "status": "READY",
+            "langName": "Java"
+        },
+        {
+            "key": "java:S1066",
+            "name": "Collapsible \"if\" statements should be merged",
+            "lang": "java",
+            "status": "READY",
+            "langName": "Java"
+        },
+        {
+            "key": "java:S1068",
+            "name": "Unused \"private\" fields should be removed",
+            "lang": "java",
+            "status": "READY",
+            "langName": "Java"
+        },
+        {
+            "key": "java:S1172",
+            "name": "Unused method parameters should be removed",
+            "lang": "java",
+            "status": "READY",
+            "langName": "Java"
+        },
+        {
+            "key": "java:S2147",
+            "name": "Catches should be combined",
+            "lang": "java",
+            "status": "READY",
+            "langName": "Java"
+        },
+        {
+            "key": "java:S1488",
+            "name": "Local variables should not be declared and then immediately returned or thrown",
+            "lang": "java",
+            "status": "READY",
+            "langName": "Java"
+        },
+        {
+            "key": "java:S1117",
+            "name": "Local variables should not shadow class fields",
+            "lang": "java",
+            "status": "READY",
+            "langName": "Java"
+        },
+        {
+            "key": "java:S1118",
+            "name": "Utility classes should not have public constructors",
+            "lang": "java",
+            "status": "READY",
+            "langName": "Java"
+        },
+        {
+            "key": "java:S3776",
+            "name": "Cognitive Complexity of methods should not be too high",
+            "lang": "java",
+            "status": "READY",
+            "langName": "Java"
+        },
+        {
+            "key": "java:S1141",
+            "name": "Try-catch blocks should not be nested",
+            "lang": "java",
+            "status": "READY",
+            "langName": "Java"
+        },
+        {
+            "key": "java:S1130",
+            "name": "\"throws\" declarations should not be superfluous",
+            "lang": "java",
+            "status": "READY",
+            "langName": "Java"
+        },
+        {
+            "key": "java:S1135",
+            "name": "Track uses of \"TODO\" tags",
+            "lang": "java",
+            "status": "READY",
+            "langName": "Java"
+        },
+        {
+            "key": "common-java:DuplicatedBlocks",
+            "name": "Source files should not have any duplicated blocks",
+            "lang": "java",
+            "status": "READY",
+            "langName": "Java"
+        }
+    ],
+    "users": [
+        {
+            "login": "admin",
+            "name": "Administrator",
+            "active": true
+        }
+    ],
+    "languages": [
+        {
+            "key": "py",
+            "name": "Python"
+        },
+        {
+            "key": "css",
+            "name": "CSS"
+        },
+        {
+            "key": "go",
+            "name": "Go"
+        },
+        {
+            "key": "kotlin",
+            "name": "Kotlin"
+        },
+        {
+            "key": "js",
+            "name": "JavaScript"
+        },
+        {
+            "key": "ts",
+            "name": "TypeScript"
+        },
+        {
+            "key": "ruby",
+            "name": "Ruby"
+        },
+        {
+            "key": "scala",
+            "name": "Scala"
+        },
+        {
+            "key": "cs",
+            "name": "C#"
+        },
+        {
+            "key": "java",
+            "name": "Java"
+        },
+        {
+            "key": "web",
+            "name": "HTML"
+        },
+        {
+            "key": "jsp",
+            "name": "JSP"
+        },
+        {
+            "key": "xml",
+            "name": "XML"
+        },
+        {
+            "key": "flex",
+            "name": "Flex"
+        },
+        {
+            "key": "php",
+            "name": "PHP"
+        },
+        {
+            "key": "vbnet",
+            "name": "VB.NET"
+        }
+    ],
+    "facets": [
+        {
+            "property": "severities",
+            "values": [
+                {
+                    "val": "MAJOR",
+                    "count": 18619
+                },
+                {
+                    "val": "MINOR",
+                    "count": 17680
+                },
+                {
+                    "val": "CRITICAL",
+                    "count": 5331
+                },
+                {
+                    "val": "INFO",
+                    "count": 1407
+                },
+                {
+                    "val": "BLOCKER",
+                    "count": 619
+                }
+            ]
+        },
+        {
+            "property": "types",
+            "values": [
+                {
+                    "val": "CODE_SMELL",
+                    "count": 43656
+                },
+                {
+                    "val": "BUG",
+                    "count": 1366
+                },
+                {
+                    "val": "VULNERABILITY",
+                    "count": 79
+                }
+            ]
+        },
+        {
+            "property": "owaspTop10",
+            "values": []
+        },
+        {
+            "property": "sansTop25",
+            "values": []
+        },
+        {
+            "property": "sonarsourceSecurity",
+            "values": []
+        }
+    ]
+}
