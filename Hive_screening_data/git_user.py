@@ -29,21 +29,13 @@ new_df = pd.DataFrame({
 # Creates DataFrame object from dictionary by columns or by index allowing type specification
 Dict = pd.DataFrame.from_dict(new_df)
 
-# Creates a Value for call in each Url
-get_url = Dict.apply(lambda x: x["ID"], 1)
-
-# get obj json in each URL
-# get_obj = get_url.apply(lambda x: requests.get(x).json())
-
 d = []
-for i in Dict['commits_url']:
+for i in Dict['user_url']:
     x = requests.get(i)
     d += x.json()
     print(d)
-    # if i == ['https://api.github.com/repos/apache/hive/pulls/1/commits']:
-    #     break
-    if d == ['message', 'documentation_url']:
+    if i == 'https://api.github.com/users/guydou':
         break
-
+        pass
     dn = pd.json_normalize(d)
-    dn.to_csv('git_commit_list.csv')
+    dn.to_csv('git_user.csv')

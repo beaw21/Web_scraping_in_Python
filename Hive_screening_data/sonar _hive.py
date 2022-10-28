@@ -10,7 +10,6 @@ data_json = response.json()
 
 hive = 'http://localhost:9000/api/issues/search?projects=HIVE&types=CODE_SMELL&scopes=MAIN&ps=500&p='
 
-
 # Can return only the first 10000 results. 10500th result asked
 # all issues 43656 / 500 = 87.3 > 88 page
 def cell_api(api, fromPage=1, toPage=2):
