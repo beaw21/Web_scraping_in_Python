@@ -4,7 +4,7 @@ from requests.adapters import HTTPAdapter, Retry
 
 # import or
 
-df = pd.read_csv('hive.csv')
+df = pd.read_csv('git_hive.csv')
 
 # get df of columns
 col = pd.DataFrame(df.columns)
@@ -13,7 +13,7 @@ new_df = pd.DataFrame({
     # key
     'ID': df['id'].values,
     #
-    'url_pull': df['url'].values,
+    # 'url_pull': df['url'].values,
     'created_at': df['created_at'],
     'closed_at': df['closed_at'],
     'commit_sha': df['merge_commit_sha'],
@@ -30,7 +30,20 @@ new_df = pd.DataFrame({
 Dict = pd.DataFrame.from_dict(new_df)
 
 # Creates a Value for call in each Url
-get_url = Dict.apply(lambda x: x["url_pull"], 1)
+get_url = Dict.apply(lambda x: x["ID"], 1)
 
 # get obj json in each URL
 # get_obj = get_url.apply(lambda x: requests.get(x).json())
+
+d = []
+for i in Dict['commits_url']:
+    x = requests.get(i)
+    d += x.json()
+    print(d)
+    # if i == ['https://api.github.com/repos/apache/hive/pulls/1/commits']:
+    #     break
+    if d == ['message', 'documentation_url']:
+        break
+
+    dn = pd.json_normalize(d)
+    dn.to_csv('git_commit_list.csv')
