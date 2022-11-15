@@ -17,7 +17,6 @@ def cell_api(api, fromPage=1, toPage=2):
     for i in range(fromPage, toPage + 1, 1):
         cell = session.get(api + str(i))
         data.append(cell.json())
-
         print('loading page' + str(i))
     return (data)
 
