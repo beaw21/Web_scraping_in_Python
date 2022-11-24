@@ -31,22 +31,20 @@ new_df = pd.DataFrame({
 Dict = pd.DataFrame.from_dict(new_df)
 
 # Creates a Value for call in each Url
-get_url = Dict.apply(lambda x: x["ID"], 1)
+get_url_commit = Dict.apply(lambda x: x["commits_url"], 1)
 
 # get obj json in each URL
-# get_obj = get_url.apply(lambda x: requests.get(x).json())
+# get_obj = get_url_commit.apply(lambda x: requests.get(x).json())
 
-# d = []
-# for i in Dict['commits_url']:
-#     x = requests.get(i)
-#     d += x.json()
-#     print(d)
-#     # if i == ['https://api.github.com/repos/apache/hive/pulls/1/commits']:
-#     #     break
-#     if d == {'message', 'documentation_url'} :
-#         break
+# Dict.to_csv('git_hive_set_dict.csv')
 
-# dn = pd.json_normalize(d)
-# dn.to_csv('git_hive_commit_list.csv')
-
-Dict.to_csv('git_hive_set_dict.csv')
+def loop_api(commit):
+    data_count = []
+    for i in commit:
+        get = requests.get(i)
+        data_count += get.json()
+        count_data_commit = range(len(data_count))
+        print(get.status_code)
+        print(count_data_commit)
+        if get.status_code == 403:
+            break
