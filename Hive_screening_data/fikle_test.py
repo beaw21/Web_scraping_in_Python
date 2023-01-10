@@ -3,6 +3,7 @@ import time
 import loop_files
 import requests
 
+
 # commit = ['item_1', 'item_2', 'item_3', 'item_4', 'item_5', 'break', 'item_6', 'break', 'item_7', 'item_8', 'break',
 #           'item_9', 'break', 'item_10', 'item_11', 'item_12', 'item_13', 'break', 'item_14', 'item_15']
 
@@ -43,10 +44,12 @@ def loop_items(api_list):
         if return_obj == "end":
             break;
         # write out return obj
-        write_file("/commit", counter, "/.csv", return_obj)
+        # write_file("/commit", counter, "/.csv", return_obj)
+        with open("/commit" + counter + "/.csv", 'w') as file:
+            file.write(str('/commits') + int(counter) + str('/.csv'))
+            file.close()
         counter += 1
         if counter % 4 == 0:
             countdown(2)
-
 
 # loop_items(df['items'])

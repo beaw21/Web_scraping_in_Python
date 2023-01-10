@@ -2,6 +2,7 @@ import pandas as pd
 import requests
 import time
 from datetime import datetime
+import json
 
 
 def call_api(api_name):
@@ -18,16 +19,19 @@ def call_api(api_name):
         data = requests.get(api_name)
 
     json_obj = []
-    json_obj += pd.json_normalize(data)
-    return json_obj
+    # json_obj += data.content.json()
+    x = json.loads(data.content.decode('utf8')
+                   )
+    print(x)
+    return x
 
 
 def write_file(prefix: object, suffix: object, type_file: object, content: object) -> object:
     # create the file which name is prefix_suffix.csv
-    with open(str() + int() + str(), 'w') as f:
-        f.write(content)
-        f.close()
-    print(f)
+    # with open(str() + int() + str(), 'w') as f:
+    #     f.write(content)
+    #     f.close()
+    # print(f)
     print("functions file")
 
 
@@ -50,7 +54,9 @@ def loop_items(api_list):
         time.sleep(4)
         print(return_obj)
         # write out return obj
-        write_file("/commit", counter, "/.csv", return_obj)
+        with open("commit" + str(counter) + ".csv", 'w') as file:
+            file.write(str(return_obj))
+            file.close()
         counter += 1
         # if counter % 5 == 0:
         #     countdown(2)
