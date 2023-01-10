@@ -1,7 +1,9 @@
-from fikle_test import call_api
+import pandas as pd
 
-commit = ['item_1', 'item_2', 'item_3', 'item_4', 'item_5', 'break', 'item_6', 'break', 'item_7', 'item_8', 'break',
-          'item_9', 'break', 'item_10', 'item_11', 'item_12', 'item_13', 'break', 'item_14', 'item_15']
+from file_test_functions import loop_items
 
-call_api(commit)
 
+data_test = pd.read_csv('git_csv/git_hive.csv')
+# call_api(commit)
+
+loop_items(data_test['url'])
