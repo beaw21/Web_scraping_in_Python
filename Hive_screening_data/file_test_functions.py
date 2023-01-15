@@ -13,17 +13,20 @@ def call_api(api_name):
     print(statu_api)
     while data.status_code == 403:
         print("sleep for 30 minutes ", str(datetime.now()))
-        time.sleep(31*60)
-        print ("start query again at", str(datetime.now()))
+        time.sleep(31 * 60)
+        print("start query again at", str(datetime.now()))
         # time.sleep(5)
         data = requests.get(api_name)
 
     json_obj = []
     # json_obj += data.content.json()
-    x = json.loads(data.content.decode('utf8')
-                   )
-    print(x)
-    return x
+    data_loads_json = json.loads(data.content.decode('utf8'))
+    data_loads_json_nol = pd.json_normalize(data_loads_json)
+    # print(data_loads_json)
+    # print(data_loads_json_nol)
+    # df = pd.DataFrame(data_loads_json)
+    # df.iteritems
+    return data_loads_json_nol
 
 
 def write_file(prefix: object, suffix: object, type_file: object, content: object) -> object:
@@ -49,15 +52,23 @@ def countdown(t):
 
 def loop_items(api_list):
     counter = 1
+    data_list = []
     for api_name in api_list:
         return_obj = call_api(api_name)
-        time.sleep(4)
         print(return_obj)
-        # write out return obj
-        with open("commit" + str(counter) + ".csv", 'w') as file:
-            file.write(str(return_obj))
-            file.close()
-        counter += 1
-        # if counter % 5 == 0:
-        #     countdown(2)
-        # if call_api(api_name) ==
+        df = pd.DataFrame.from_dict(return_obj)
+        data_list.append(df)
+        time.sleep(4)
+    df_con = pd.concat(data_list, ignore_index=True)
+    print(df_con.to_markdown())
+    
+    # item = df.items()
+    # print(item)
+    # data_concat = pd.concat([df])
+    # print(data_concat)
+    # x = pd.DataFrame.to_csv(data_concat)
+    # write out return obj
+    # with open("commit" + str(counter) + ".csv", 'w') as file:
+    #     file.write(str(df))
+    #     file.close()
+    # counter += 1
