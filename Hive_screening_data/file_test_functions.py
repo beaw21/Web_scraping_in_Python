@@ -1,35 +1,31 @@
 import pandas as pd
 import requests
 import time
+import pickle
 from datetime import datetime
 import json
 
 
 def call_api(api_name):
+    data_odj =[]
     data = requests.get(api_name)
-    # print(api_name)
     print(data)
     statu_api = data.status_code
     print(statu_api)
+    data_odj += data.json()
     while data.status_code == 403:
         print("sleep for 30 minutes ", str(datetime.now()))
         time.sleep(31 * 60)
         print("start query again at", str(datetime.now()))
-        # time.sleep(5)
+        time.sleep(5)
         data = requests.get(api_name)
 
-    json_obj = []
-    # json_obj += data.content.json()
     data_loads_json = json.loads(data.content.decode('utf8'))
     data_loads_json_nol = pd.json_normalize(data_loads_json)
-    # print(data_loads_json)
-    # print(data_loads_json_nol)
-    # df = pd.DataFrame(data_loads_json)
-    # df.iteritems
     return data_loads_json_nol
 
 
-def write_file(prefix: object, suffix: object, type_file: object, content: object) -> object:
+def write_file(prefix: object, suffix: object, type_file: object, content: object):
     # create the file which name is prefix_suffix.csv
     # with open(str() + int() + str(), 'w') as f:
     #     f.write(content)
@@ -57,18 +53,16 @@ def loop_items(api_list):
         return_obj = call_api(api_name)
         print(return_obj)
         df = pd.DataFrame.from_dict(return_obj)
-        data_list.append(df)
-        time.sleep(4)
-    df_con = pd.concat(data_list, ignore_index=True)
-    print(df_con.to_markdown())
-    
-    # item = df.items()
-    # print(item)
+        # data_list.append(df)
+        # time.sleep(4)
+
+    # df_con = pd.concat(data_list, ignore_index=True)
+    # print(df_con.to_markdown())
+
     # data_concat = pd.concat([df])
     # print(data_concat)
     # x = pd.DataFrame.to_csv(data_concat)
     # write out return obj
     # with open("commit" + str(counter) + ".csv", 'w') as file:
     #     file.write(str(df))
-    #     file.close()
     # counter += 1
