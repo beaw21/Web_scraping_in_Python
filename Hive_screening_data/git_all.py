@@ -1,7 +1,7 @@
 import pandas as pd
 from fikle_test import call_api
 
-git_commits = pd.read_csv("git_csv/git_commits_test_data_986.csv")
+git_commits = pd.read_csv("git_csv/git_hive.csv")
 git_pull = pd.read_csv("git_csv/git_hive_pull.csv")
 
 git_pull_drop = git_pull.drop(columns=['url_pull', 'commits_url', 'user_url'])
