@@ -4,7 +4,7 @@ from requests.adapters import HTTPAdapter, Retry
 
 # import or
 
-df = pd.read_csv('git_hive.csv')
+df = pd.read_csv('git_csv/git_hive.csv')
 
 # get df of columns
 col = pd.DataFrame(df.columns)
