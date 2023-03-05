@@ -23,4 +23,4 @@ def cell_api(api, fromPage=1, toPage=5, **page):
 
 data_list_api = cell_api(api_get, fromPage=1, toPage=300)
 df = pd.json_normalize(data_list_api)
-data_list_api.to_csv('cover_1.csv')
+# data_list_api.to_csv('cover_1.csv')

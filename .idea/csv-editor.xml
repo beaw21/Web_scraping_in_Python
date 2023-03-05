@@ -31,6 +31,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="/Hive_screening_data/git_csv/git_commits_test_data_986.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="/Hive_screening_data/git_csv/git_hive_commit.csv">
           <value>
             <Attribute>
@@ -88,6 +95,13 @@
           </value>
         </entry>
         <entry key="/Hive_screening_data/git_csv/git_hive_pull.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Hive_screening_data/git_csv/git_hive_set_dict.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
