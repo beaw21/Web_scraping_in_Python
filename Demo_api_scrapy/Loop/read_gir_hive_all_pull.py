@@ -1,7 +1,6 @@
 import pandas as pd
 import requests
 import requests_cache
-import numpy as np
 
 df = pd.read_csv('git_all_pull_not_null.csv')
 
@@ -17,30 +16,23 @@ requests_cache.install_cache('my_cache', expire_after=3600)  # cache for 1 hour
 
 data_odj = []
 list_all_pd = []
-for i in df['commits_url'].head(10):
+for i in df['commits_url']:
     print(i)
-    if requests_cache.get_cache().has_url(i):
-        response_url = requests_cache.get_cache().get_response(i)
-        print('Response retrieved from cache')
-    else:
-        # Send a new GET request and cache the response
-        response_url = requests.get(i, headers=header)
-        requests_cache.get_cache().add_response(i, response_url)
-        print('New response cached')
-        data_odj += response_url.json()
-        print("OBJ:", data_odj)
-        data_loads_json = pd.json_normalize(data_odj)
-        print("data_loads_json:", data_loads_json)
+    response_url = requests.get(i, headers=header)
+    data_odj += response_url.json()
+    # print("OBJ:", data_odj)
+    data_loads_json = pd.json_normalize(data_odj)
+    print("data_loads_json:", data_loads_json)
 
-        data_loads_json['index'] = i
-        data_loads_json.set_index(['index', 'sha', 'node_id', 'commit.tree.sha'])
-        append_obj = list_all_pd.append(data_loads_json)
-        all_pd = pd.concat(list_all_pd)
-        drop_all_pd = all_pd.drop_duplicates(subset=['sha', 'node_id'])
-        set_pull = drop_all_pd.set_index(['index', 'sha'])
-        set_pull.to_csv('get_pull_commits_all.csv')
+    data_loads_json['index'] = i
+    data_loads_json.set_index(['index', 'sha', 'node_id', 'commit.tree.sha'])
+    append_obj = list_all_pd.append(data_loads_json)
+    all_pd = pd.concat(list_all_pd)
+    drop_all_pd = all_pd.drop_duplicates(subset=['sha', 'node_id'])
+    set_pull = drop_all_pd.set_index(['index', 'sha'])
+    set_pull.to_csv('get_pull_commits_all.csv')
 
     if i == 'https://api.github.com/repos/apache/hive/pulls/1/commits':
         break
-    if data.status_code != 200:
+    if response_url.status_code != 200:
         break
