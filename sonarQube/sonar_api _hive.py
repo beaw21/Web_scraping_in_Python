@@ -28,15 +28,3 @@ list_obj = df_test['issues'].to_list()
 
 obj_issues = df_test.apply(lambda x: x['issues'], 1)
 df_obj_issues = pd.DataFrame(obj_issues)
-
-
-# for i in range(1, 5):
-#     d = {}
-#     for n in obj:
-#         d["x{0}".format(i)] = pd.concat([pd.DataFrame(n)], ignore_index=True)
-#     print(d)
-
-# new_df = pd.DataFrame()
-
-# new_df = pd.concat([new_df, df_obj], ignore_index = True)
-

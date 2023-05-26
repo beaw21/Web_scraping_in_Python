@@ -24,9 +24,9 @@ for i in cell_file['commits_url']:
     all_pd = pd.concat(list_all_pd)
     drop_all_pd = all_pd.drop_duplicates(subset=['sha', 'node_id'])
     set_pull = drop_all_pd.set_index(['index', 'sha'])
-    set_pull.to_csv('get_pull_commits_all.csv')
+    set_pull.to_csv('02.get_pull_commits_all.csv')
 
-    if i == 'https://api.github.com/repos/apache/ozone/pulls/1/commits':
+    if i == 'https://api.github.com/repos/apache/ozone/pulls/1':
         print("ok!!")
         break
     if response_url.status_code != 200:
