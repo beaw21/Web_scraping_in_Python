@@ -1,15 +1,15 @@
 import requests
 import pandas as pd
 
-
-token_ozone = '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'
+# token_2='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'
+token_ozone = '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'
 url = "https://api.github.com/rate_limit"
 header = {'Authorization': 'Bearer ' + token_ozone}
 response = requests.get(url, headers=header)
 print(response.json())
 
 
-api_get = 'https://api.github.com/repos/apache/ozone/pulls?state=closed&per_page=300&page='
+api_get = 'https://api.github.com/repos/apache/shiro/pulls?state=closed&per_page=300&page='
 print(type(api_get))
 
 requests_data = requests.get(api_get)
@@ -26,6 +26,6 @@ def cell_api(api, fromPage=1, toPage=5, **page):
         return (data)
 
 
-data_list_api = cell_api(api_get, fromPage=1, toPage=100)
+data_list_api = cell_api(api_get, fromPage=1, toPage=40)
 df = pd.json_normalize(data_list_api)
-df.to_csv("01.ozone_all_pll.csv")
+df.to_csv("01.shiro_all_pll.csv")
