@@ -1,7 +1,7 @@
 import pandas as pd
 import requests
 
-cell_file = pd.read_csv('01.shiro_all_pll.csv')
+cell_file = pd.read_csv('01.seatunnel_all_pll.csv')
 
 token_ozone = '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'
 url = "https://api.github.com/rate_limit"
@@ -11,7 +11,7 @@ print(response.json())
 
 # Empty list to store the API response data
 data_list = []
-
+#
 for i in cell_file['url']:
     data = requests.get(i, headers=header)
     data_list.append(data.json())
@@ -21,4 +21,4 @@ for i in cell_file['url']:
 
 df = pd.DataFrame(obj)
 print(df)
-# df.to_csv('02.shiro_pull_api.csv', index=False)
+df.to_csv('02.seatunnel_pull_api.csv', index=False)
