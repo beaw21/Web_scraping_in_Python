@@ -26,6 +26,7 @@ for i, row in df_drop_col.iterrows():
     df_drop_col.loc[i, 'count'] = count
     # print(count)
 print(df_drop_col)
+
 # create empty dataframes to hold the results
 data_set_count = pd.DataFrame(df_drop_col)
 # convert the 'Date' column to datetime type
@@ -38,8 +39,6 @@ df_set_date = data_set_count.sort_values(by='commit.author.date', ascending=Fals
 latest_data = df_set_date.groupby('index').apply(lambda x: x.loc[x['commit.author.date'].idxmax()]).reset_index(drop=True)
 # sort the data using natsort
 latest_data['index'] = natsorted(latest_data['index'])
-
-# latest_data.to_pickle('sort_commit.pkl')
 
 # x = latest_data[['sha']]
 # x.to_csv("sha_1.csv" , sep='\n' ,  index=False)

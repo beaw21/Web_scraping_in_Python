@@ -1,9 +1,9 @@
 import pandas as pd
 import requests
 
-cell_file = pd.read_csv('jpswiki_all_page.csv')
+cell_file = pd.read_csv('01.shiro_all_pll.csv')
 
-token_ozone = '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'
+token_ozone = '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'
 url = "https://api.github.com/rate_limit"
 header = {'Authorization': 'Bearer ' + token_ozone}
 response = requests.get(url, headers=header)
