@@ -9,7 +9,7 @@ response = requests.get(url, headers=header)
 print(response.json())
 
 
-api_get = 'https://api.github.com/repos/apache/shiro/pulls?state=closed&per_page=300&page='
+api_get = 'https://api.github.com/repos/apache/seatunnel/pulls?state=closed&per_page=300&page='
 print(type(api_get))
 
 requests_data = requests.get(api_get)
@@ -26,6 +26,6 @@ def cell_api(api, fromPage=1, toPage=5, **page):
         return (data)
 
 
-data_list_api = cell_api(api_get, fromPage=1, toPage=40)
+data_list_api = cell_api(api_get, fromPage=1, toPage=30)
 df = pd.json_normalize(data_list_api)
-df.to_csv("01.shiro_all_pll.csv")
+df.to_csv("01.seatunnel_all_pll.csv")
